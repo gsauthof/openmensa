@@ -26,3 +26,25 @@ target_link_libraries(fhrus2openmensa
   ${LIBXML_LIBRARIES}
   ${Boost_LIBRARIES}
   )
+
+enable_testing()
+
+set(FHRUS_TESTS
+  fhrus_20150112
+  fhrus_20150119
+  )
+
+foreach(TEST ${FHRUS_TESTS})
+  add_test(NAME ${TEST}
+    COMMAND bash ${CMAKE_SOURCE_DIR}/test/compare.sh
+                   ./fhrus2openmensa
+                   ${CMAKE_SOURCE_DIR}/test/in/${TEST}.xml
+                   ${CMAKE_SOURCE_DIR}/test/out/${TEST}.xml
+                   ${CMAKE_SOURCE_DIR}/test/ref/${TEST}.xml
+  )
+endforeach()
+
+add_custom_target(check COMMAND ${CMAKE_CTEST_COMMAND}
+  DEPENDS
+  fhrus2openmensa
+)
