@@ -28,6 +28,19 @@ target_link_libraries(fhrus2openmensa
   ${Boost_LIBRARIES}
   )
 
+add_executable(unibi2openmensa
+  unibi2openmensa.cc
+  utility.cc
+  )
+set_property(TARGET unibi2openmensa PROPERTY INCLUDE_DIRECTORIES
+  ${LIBXML_INCLUDE_DIRS}
+  ${Boost_INCLUDE_DIRS}
+  )
+target_link_libraries(unibi2openmensa
+  ${LIBXML_LIBRARIES}
+  ${Boost_LIBRARIES}
+  )
+
 enable_testing()
 
 set(FHRUS_TESTS
