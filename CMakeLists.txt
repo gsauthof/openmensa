@@ -17,6 +17,7 @@ pkg_search_module(LIBXML REQUIRED libxml++-2.6)
 
 add_executable(fhrus2openmensa
   fhrus2openmensa.cc
+  utility.cc
   )
 set_property(TARGET fhrus2openmensa PROPERTY INCLUDE_DIRECTORIES
   ${LIBXML_INCLUDE_DIRS}

@@ -15,6 +15,7 @@
  *     $ xmllint -noout -schema open-mensa-v2.xsd fhrus_feed.xml
  *
  */
+#include "utility.h"
 
 #include <libxml++/libxml++.h>
 #include <boost/format.hpp>
@@ -79,11 +80,6 @@ static string date(const Node *node, unsigned dow)
   }
 }
 
-static string normalize(const string &s)
-{
-  static const boost::regex re(R"([ \t\n]+)");
-  return boost::regex_replace(s, re, " ");
-}
 static string normalize_price(const string &s)
 {
   static const boost::regex re(R"(^([0-9]+),([0-9]+)[^0-9]+$)");
@@ -173,11 +169,12 @@ static void generate_openmensa(const Node *root, ostream &o)
 
 int main(int argc, char **argv)
 {
-  //std::locale::global(std::locale(""));
-  //std::locale::global(std::locale().combine<std::ctype<char> >(std::locale("")) );
+  // std::locale::global(std::locale(""));
   // use the users local (otherwise glib throws on utf8 chars != ascii
-  // + don't use braindead numpunct settings, e.g. 1,024 instead of 1024 ...
-  std::locale::global(std::locale("").combine<std::numpunct<char> >(std::locale()) );
+  // + don't use braindead numpunct settings,
+  //   e.g. 1,024 instead of 1024 ...
+  std::locale::global(
+      std::locale("").combine<std::numpunct<char> >(std::locale()) );
   try {
     string filename(argv[1]);
     DomParser parser;
