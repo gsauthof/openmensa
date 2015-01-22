@@ -171,27 +171,44 @@ static bool has_prices(const Node *cat)
   return false;
 }
 
-static void gen_cat(const Node *cat, ostream &o)
+static void gen_meal(const Node *cat, ostream &o)
 {
-  if (!has_prices(cat))
-    return;
-  o << "      <category name='" << cat_name(cat) << "'>\n";
   o << "        <meal>\n";
   gen_name(cat, o);
   gen_note(cat, o);
   gen_long_note(cat, o);
   gen_prices(cat, o);
   o << "        </meal>\n";
-  o << "      </category>\n";
+}
+
+static void gen_cat(const Node *cat, string &last_cat_name, ostream &o)
+{
+  if (!has_prices(cat))
+    return;
+  string cname(cat_name(cat));
+  if (cname != last_cat_name) {
+    o << "      </category>\n";
+    o << "      <category name='" << cname << "'>\n";
+  }
+  gen_meal(cat, o);
+  last_cat_name = cname;
 }
 
 static void gen_dow(const Node *day, ostream &o)
 {
   string d(std::move(date(day)));
   o << "    <day date='" << d << "'>\n";
-  auto cats = day->find("./xhtml:table/xhtml:tr", namespaces);
-  for (auto cat : cats)
-    gen_cat(cat, o);
+  auto cats = std::move(day->find("./xhtml:table/xhtml:tr", namespaces));
+  string last_cat_name;
+  auto i = cats.begin();
+  if (i != cats.end()) {
+    o << "      <category name='" << cat_name(*i) << "'>\n";
+    gen_meal(*i, o);
+    ++i;
+  }
+  for (; i != cats.end(); ++i)
+    gen_cat(*i, last_cat_name, o);
+  o << "      </category>\n";
   o << "    </day>\n";
 }
 
