@@ -46,6 +46,7 @@ enable_testing()
 set(FHRUS_TESTS
   fhrus_20150112
   fhrus_20150119
+  fhrus_holiday
   )
 
 foreach(TEST ${FHRUS_TESTS})
@@ -61,6 +62,7 @@ endforeach()
 set(UNIBI_TESTS
   unibi_20150119
   unibi_20150112
+  unibi_holiday
   )
 foreach(TEST ${UNIBI_TESTS})
   add_test(NAME ${TEST}

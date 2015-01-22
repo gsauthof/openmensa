@@ -196,12 +196,14 @@ static void gen_cat(const Node *cat, string &last_cat_name, ostream &o)
 
 static void gen_dow(const Node *day, ostream &o)
 {
-  string d(std::move(date(day)));
-  o << "    <day date='" << d << "'>\n";
   auto cats = std::move(day->find("./xhtml:table/xhtml:tr", namespaces));
   string last_cat_name;
   auto i = cats.begin();
   if (i != cats.end()) {
+    if (!has_prices(*i))
+      return;
+    string d(std::move(date(day)));
+    o << "    <day date='" << d << "'>\n";
     o << "      <category name='" << cat_name(*i) << "'>\n";
     gen_meal(*i, o);
     ++i;
