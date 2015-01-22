@@ -158,7 +158,6 @@ static void gen_prices(const Node *cat, ostream &o)
         << "</price>\n";
     }
   }
-  o << '\n';
 }
 
 static bool has_prices(const Node *cat)

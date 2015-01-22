@@ -58,7 +58,21 @@ foreach(TEST ${FHRUS_TESTS})
   )
 endforeach()
 
+set(UNIBI_TESTS
+  unibi_20150119
+  )
+foreach(TEST ${UNIBI_TESTS})
+  add_test(NAME ${TEST}
+    COMMAND bash ${CMAKE_SOURCE_DIR}/test/compare.sh
+                   ./unibi2openmensa
+                   ${CMAKE_SOURCE_DIR}/test/in/${TEST}.xml
+                   ${CMAKE_SOURCE_DIR}/test/out/${TEST}.xml
+                   ${CMAKE_SOURCE_DIR}/test/ref/${TEST}.xml
+  )
+endforeach()
+
 add_custom_target(check COMMAND ${CMAKE_CTEST_COMMAND}
   DEPENDS
   fhrus2openmensa
+  unibi2openmensa
 )
