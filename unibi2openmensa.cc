@@ -1,21 +1,27 @@
-// tidy -o unibi.xml -utf8 -bare -clean -indent --show-warnings no --hide-comments yes -numeric -q -asxml unibi.html
-/* unibi2openmensa - Convert the Bielefeld University Mensa plan
- *                   to OpenMensa Feed v2
- *
- * 2015-01-20, Georg Sauthoff <mail@georg.so>
- *
- * GPLv3+
- *
- * Example:
- *
- *     $ curl -o unibi.html \
- *       'http://www.studentenwerkbielefeld.de/index.php?id=129'
- *     $ tidy -o unibi.xml -utf8 -bare -clean -indent --show-warnings no \
- *            --hide-comments yes -numeric -q -asxml unibi.html
- *     $ ./unibi2openmensa unibi.xml > unibi_feed.xml
- *     $ xmllint -noout -schema open-mensa-v2.xsd unibi_feed.xml
- *
- */
+#include <ostream>
+static void help(const char *progname, std::ostream &o)
+{
+  o << progname /* fhrus2openmensa */ << " -"
+    << R"( unibi2openmensa - Convert the Bielefeld University Mensa plan
+                  to OpenMensa Feed v2
+
+2015-01-20, Georg Sauthoff <mail@georg.so>
+
+GPLv3+
+
+Example:
+
+    $ curl -o unibi.html \
+      'http://www.studentenwerkbielefeld.de/index.php?id=129'
+    $ tidy -o unibi.xml -utf8 -bare -clean -indent --show-warnings no \
+           --hide-comments yes -numeric -q -asxml unibi.html
+    $ ./unibi2openmensa unibi.xml > unibi_feed.xml
+    $ xmllint -noout -schema open-mensa-v2.xsd unibi_feed.xml
+
+
+)";
+}
+
 #include "utility.h"
 
 #include <libxml++/libxml++.h>
@@ -232,15 +238,33 @@ static void generate_openmensa(const Node *root, ostream &o)
 )";
 }
 
+struct Option {
+  string filename;
+  Option(int argc, char **argv);
+};
+Option::Option(int argc, char **argv)
+{
+  if (argc > 1) {
+    if (!strcmp(argv[1], "-h") || !strcmp(argv[1], "--help")) {
+      help(argv[0], cout);
+      exit(0);
+    }
+    filename = argv[1];
+    return;
+  }
+  help(argv[0], cerr);
+  exit(1);
+}
+
 int main(int argc, char **argv)
 {
   std::locale::global(
       std::locale("").combine<std::numpunct<char> >(std::locale()) );
   try {
-    string filename(argv[1]);
+    Option opt(argc, argv);
     DomParser parser;
     parser.set_substitute_entities(true);
-    parser.parse_file(filename);
+    parser.parse_file(opt.filename);
     generate_openmensa(parser.get_document()->get_root_node(), cout);
   } catch (const std::exception &e) {
     cerr << "Fail: " << e.what() << '\n';

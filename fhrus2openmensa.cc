@@ -1,20 +1,30 @@
-/* fhrus2openmensa - Convert the FH-Mensa Rüsselsheim plan to OpenMensa Feed v2
- *
- * 2015-01-18, Georg Sauthoff <mail@georg.so>
- *
- * GPLv3+
- *
- * Example:
- *
- *     $ curl -o fhrus.html \
- *       'http://www.studentenwerkfrankfurt.de/index.php?id=585&no_cache=1&type=98'
- *     $ tidy -o fhrus.xml -bare -clean -indent --show-warnings no \
- *            --hide-comments yes -numeric \
- *            -q -asxml fhrus.html
- *     $ ./fhrus2openmensa fhrus.xml > fhrus_feed.xml
- *     $ xmllint -noout -schema open-mensa-v2.xsd fhrus_feed.xml
- *
- */
+#include <ostream>
+static void help(const char *progname, std::ostream &o)
+{
+  o << progname /* fhrus2openmensa */ << " -"
+    << R"( Convert the FH-Mensa Rüsselsheim plan to OpenMensa Feed v2
+
+2015-01-18, Georg Sauthoff <mail@georg.so>
+
+GPLv3+
+
+Example:
+
+    $ curl -o fhrus.html \
+      'http://www.studentenwerkfrankfurt.de/index.php?id=585&no_cache=1&type=98'
+    $ tidy -o fhrus.xml -bare -clean -indent --show-warnings no \
+           --hide-comments yes -numeric \
+           -q -asxml fhrus.html
+    $ ./fhrus2openmensa fhrus.xml > fhrus_feed.xml
+    $ xmllint -noout -schema open-mensa-v2.xsd fhrus_feed.xml
+
+
+Options:
+
+  --year YYYY    fake the current year
+
+)";
+}
 #include "utility.h"
 
 #include <libxml++/libxml++.h>
@@ -29,6 +39,8 @@
 #include <locale>
 #include <exception>
 #include <stdexcept>
+#include <cstdio>
+#include <cstdlib>
 using namespace std;
 using namespace xmlpp;
 namespace mp = boost::multiprecision;
@@ -40,7 +52,8 @@ class Today {
   public:
     Today();
     const string &year() const;
-    static const Today &instance();
+    void set_year(const string &y);
+    static Today &instance();
 };
 Today::Today()
 {
@@ -48,7 +61,8 @@ Today::Today()
   year_ = boost::lexical_cast<string>(t.date().year());
 }
 const string &Today::year() const { return year_; };
-const Today &Today::instance()
+void Today::set_year(const string &y) { if (!y.empty()) year_ = y; }
+Today &Today::instance()
 {
   static Today t;
   return t;
@@ -167,6 +181,30 @@ static void generate_openmensa(const Node *root, ostream &o)
 )";
 }
 
+struct Option {
+  string filename;
+  string year;
+  Option(int argc, char **argv);
+};
+Option::Option(int argc, char **argv)
+{
+  if (argc > 3 && !strcmp(argv[1], "--year")) {
+    year = argv[2];
+    filename = argv[3];
+    return;
+  }
+  if (argc > 1) {
+    if (!strcmp(argv[1], "-h") || !strcmp(argv[1], "--help")) {
+      help(argv[0], cout);
+      exit(0);
+    }
+    filename = argv[1];
+    return;
+  }
+  help(argv[0], cerr);
+  exit(1);
+}
+
 int main(int argc, char **argv)
 {
   // std::locale::global(std::locale(""));
@@ -176,10 +214,11 @@ int main(int argc, char **argv)
   std::locale::global(
       std::locale("").combine<std::numpunct<char> >(std::locale()) );
   try {
-    string filename(argv[1]);
+    Option opt(argc, argv);
+    Today::instance().set_year(opt.year);
     DomParser parser;
     parser.set_substitute_entities(true);
-    parser.parse_file(filename);
+    parser.parse_file(opt.filename);
     generate_openmensa(parser.get_document()->get_root_node(), cout);
   } catch (const std::exception &e) {
     cerr << "Fail: " << e.what() << '\n';
