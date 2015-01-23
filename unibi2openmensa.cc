@@ -26,15 +26,15 @@ Example:
 
 #include <libxml++/libxml++.h>
 #include <boost/format.hpp>
-#include <boost/regex.hpp>
 #include <boost/lexical_cast.hpp>
-#include <iostream>
-#include <string>
-#include <locale>
+#include <boost/regex.hpp>
 #include <exception>
+#include <iostream>
+#include <locale>
 #include <stdexcept>
-using namespace std;
+#include <string>
 using namespace xmlpp;
+using namespace std;
 
 static const Node::PrefixNsMap namespaces = {
   { "xhtml", "http://www.w3.org/1999/xhtml" }

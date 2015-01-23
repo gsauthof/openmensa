@@ -28,23 +28,22 @@ Options:
 #include "utility.h"
 
 #include <libxml++/libxml++.h>
-#include <boost/format.hpp>
-#include <boost/regex.hpp>
-#include <boost/lexical_cast.hpp>
 #include <boost/date_time/posix_time/posix_time.hpp>
 //#include <boost/date_time/posix_time/posix_time_io.hpp>
+#include <boost/format.hpp>
+#include <boost/lexical_cast.hpp>
 #include <boost/multiprecision/cpp_dec_float.hpp>
-#include <iostream>
-#include <string>
-#include <locale>
-#include <exception>
-#include <stdexcept>
+#include <boost/regex.hpp>
 #include <cstdio>
 #include <cstdlib>
-using namespace std;
+#include <exception>
+#include <iostream>
+#include <locale>
+#include <stdexcept>
+#include <string>
 using namespace xmlpp;
 namespace mp = boost::multiprecision;
-
+using namespace std;
 
 class Today {
   private:
@@ -74,21 +73,24 @@ static const Node::PrefixNsMap namespaces = {
 
 unsigned days(const Node *node)
 {
-  double d = node->eval_to_number("count(//xhtml:table[@class='tx_hmwbsffmmenu_menu date'])",
+  double d = node->eval_to_number(
+      "count(//xhtml:table[@class='tx_hmwbsffmmenu_menu date'])",
       namespaces);
   return boost::lexical_cast<unsigned>(d);
 }
 
 static string date(const Node *node, unsigned dow)
 {
-  string expr((boost::format("//xhtml:table[@class='tx_hmwbsffmmenu_menu date'][%1%]"
+  string expr((boost::format(
+          "//xhtml:table[@class='tx_hmwbsffmmenu_menu date'][%1%]"
           "/xhtml:tr/xhtml:td/xhtml:strong/text()") % dow).str());
   string s(node->eval_to_string(expr, namespaces));
 
   static const boost::regex re(R"(^[A-Za-z ,]+([0-9]{2})\.([0-9]{2})\.$)");
   boost::smatch m;
   if (boost::regex_match(s, m, re)) {
-    return (boost::format("%1%-%2%-%3%") % Today::instance().year() % m[2] % m[1]).str();
+    return (boost::format("%1%-%2%-%3%") % Today::instance().year()
+        % m[2] % m[1]).str();
   } else {
     throw runtime_error("Unexpected date string: " + s);
   }
@@ -107,22 +109,26 @@ static string normalize_price(const string &s)
 
 static NodeSet names(const Node *node, unsigned dow)
 {
-  string expr((boost::format("//xhtml:table[@class='tx_hmwbsffmmenu_menu date'][%1%]/"
+  string expr((boost::format(
+          "//xhtml:table[@class='tx_hmwbsffmmenu_menu date'][%1%]/"
           "xhtml:tr/xhtml:td/xhtml:div/xhtml:strong/text()") % dow).str());
   auto r = node->find(expr, namespaces);
   return std::move(r);
 }
 static NodeSet notes(const Node *node, unsigned dow)
 {
-  string expr((boost::format("//xhtml:table[@class='tx_hmwbsffmmenu_menu date'][%1%]/"
+  string expr((boost::format(
+          "//xhtml:table[@class='tx_hmwbsffmmenu_menu date'][%1%]/"
           "/xhtml:tr/xhtml:td/xhtml:div/xhtml:p/text()") % dow).str());
   auto r = node->find(expr, namespaces);
   return std::move(r);
 }
 static NodeSet prices(const Node *node, unsigned dow)
 {
-  string expr((boost::format("//xhtml:table[@class='tx_hmwbsffmmenu_menu date'][%1%]/"
-          "/xhtml:tr/xhtml:td/xhtml:p[@class='price']/xhtml:strong/text()") % dow).str());
+  string expr((boost::format(
+          "//xhtml:table[@class='tx_hmwbsffmmenu_menu date'][%1%]/"
+          "/xhtml:tr/xhtml:td/xhtml:p[@class='price']/xhtml:strong/text()")
+        % dow).str());
   auto r = node->find(expr, namespaces);
   return std::move(r);
 }
@@ -155,8 +161,10 @@ static void gen_dow(const Node *root, unsigned dow, ostream &o)
     ContentNode *price = dynamic_cast<ContentNode*>(*k);
     string charge(std::move(normalize_price(price->get_content())));
     o << "          <price role='student'>" << charge << "</price>\n";
-    o << "          <price role='employee'>" << guest_price(charge) << "</price>\n";
-    o << "          <price role='other'>" << guest_price(charge) << "</price>\n";
+    o << "          <price role='employee'>" << guest_price(charge)
+      << "</price>\n";
+    o << "          <price role='other'>" << guest_price(charge)
+      << "</price>\n";
     o << "        </meal>\n";
     o << "      </category>\n";
   }
