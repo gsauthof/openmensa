@@ -5,8 +5,10 @@
 # 2015-01-23, Georg Sauthoff <mail@georg.so>, GPLv3+
 
 import argparse
-from   subprocess import call, check_call
 from   os         import chdir
+from   random     import expovariate
+from   subprocess import call, check_call
+from   time       import sleep
 
 parser = argparse.ArgumentParser(description='Update openmensa feed')
 parser.add_argument('--url',       help='URL to fetch',
@@ -27,7 +29,15 @@ parser.add_argument('--cf',        help='extra curl flags',
                     action='append', default=[])
 parser.add_argument('--xsd',       help='open mensa XSD file',
                     default='open-mensa-v2.xsd')
+parser.add_argument('--wait',      help='wait rate',
+                    default=0.1,   type=float)
+parser.add_argument('--agent',     help='user agent')
 opt = parser.parse_args()
+
+sleep(expovariate(1.0/opt.wait))
+
+if opt.agent is not None:
+  opt.cf += [ '--user-agent', opt.agent ]
 
 html = opt.name   + '_inp.html'
 xml  = opt.name   + '_inp.xml'
