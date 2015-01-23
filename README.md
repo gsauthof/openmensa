@@ -29,10 +29,10 @@ For converting the HTML pages into the XML feed, they are first cleaned
 up into well-formed and conforming XHTML via [HTML Tidy][tidy].
 
 The generators are written in C++11 and heavily use [XPath][xpath] 2.0
-expression.
+expressions.
 
-[Python][python] is used for the update script instead of shell, because of the
-library support.
+[Python][python] is used for the update script instead of shell, because of
+the library support.
 
 ### Dependencies
 
