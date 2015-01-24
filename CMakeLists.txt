@@ -55,7 +55,7 @@ foreach(TEST ${FHRUS_TESTS})
                    --exe ./fhrus2openmensa
                    --ef=--year --ef=2015
                    --inp ${CMAKE_SOURCE_DIR}/test/in/${TEST}.xml
-                   --out ${CMAKE_SOURCE_DIR}/test/out/${TEST}.xml
+                   --out ${CMAKE_BINARY_DIR}/test/out/${TEST}.xml
                    --ref ${CMAKE_SOURCE_DIR}/test/ref/${TEST}.xml
   )
 endforeach()
@@ -70,7 +70,7 @@ foreach(TEST ${UNIBI_TESTS})
     COMMAND python ${CMAKE_SOURCE_DIR}/test/compare.py
                    --exe ./unibi2openmensa
                    --inp ${CMAKE_SOURCE_DIR}/test/in/${TEST}.xml
-                   --out ${CMAKE_SOURCE_DIR}/test/out/${TEST}.xml
+                   --out ${CMAKE_BINARY_DIR}/test/out/${TEST}.xml
                    --ref ${CMAKE_SOURCE_DIR}/test/ref/${TEST}.xml
   )
 endforeach()
