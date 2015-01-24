@@ -1,0 +1,39 @@
+default namespace = "http://openmensa.org/open-mensa-v2"
+
+start =
+  notAllowed
+  | element openmensa {
+      attribute version { xsd:float },
+      element canteen {
+        element day {
+          attribute date {
+            xsd:string { pattern = "[0-9]{4,4}-[0-9]{2,2}-[0-9]{2,2}" }
+          },
+          (element category {
+             attribute name {
+               xsd:string { minLength = "1" maxLength = "250" }
+             },
+             element meal {
+               element name {
+                 xsd:string { minLength = "1" maxLength = "250" }
+               },
+               element note {
+                 xsd:string { minLength = "1" maxLength = "250" }
+               }*,
+               element price {
+                 attribute role {
+                   xsd:string "other"
+                   | xsd:string "student"
+                   | xsd:string "employee"
+                   | xsd:string "pupil"
+                 },
+                 xsd:float
+               }*
+             }+
+           }+
+           | element closed {
+               xsd:string { maxLength = "0" }
+             })
+        }*
+      }
+    }
