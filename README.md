@@ -31,8 +31,9 @@ up into well-formed and conforming XHTML via [HTML Tidy][tidy].
 The generators are written in C++11 and heavily use [XPath][xpath] 2.0
 expressions.
 
-[Python][python] is used for the update script instead of shell, because of
-the library support.
+[Python][python] is used for the update and test scripts instead of Shell,
+because of the library support. In that sense, Python is used as a
+replacement for shell scripting.
 
 ### Dependencies
 

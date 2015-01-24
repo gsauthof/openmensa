@@ -51,11 +51,12 @@ set(FHRUS_TESTS
 
 foreach(TEST ${FHRUS_TESTS})
   add_test(NAME ${TEST}
-    COMMAND bash ${CMAKE_SOURCE_DIR}/test/compare.sh
-                   ./fhrus2openmensa
-                   ${CMAKE_SOURCE_DIR}/test/in/${TEST}.xml
-                   ${CMAKE_SOURCE_DIR}/test/out/${TEST}.xml
-                   ${CMAKE_SOURCE_DIR}/test/ref/${TEST}.xml
+    COMMAND python ${CMAKE_SOURCE_DIR}/test/compare.py
+                   --exe ./fhrus2openmensa
+                   --ef=--year --ef=2015
+                   --inp ${CMAKE_SOURCE_DIR}/test/in/${TEST}.xml
+                   --out ${CMAKE_SOURCE_DIR}/test/out/${TEST}.xml
+                   --ref ${CMAKE_SOURCE_DIR}/test/ref/${TEST}.xml
   )
 endforeach()
 
@@ -66,11 +67,11 @@ set(UNIBI_TESTS
   )
 foreach(TEST ${UNIBI_TESTS})
   add_test(NAME ${TEST}
-    COMMAND bash ${CMAKE_SOURCE_DIR}/test/compare.sh
-                   ./unibi2openmensa
-                   ${CMAKE_SOURCE_DIR}/test/in/${TEST}.xml
-                   ${CMAKE_SOURCE_DIR}/test/out/${TEST}.xml
-                   ${CMAKE_SOURCE_DIR}/test/ref/${TEST}.xml
+    COMMAND python ${CMAKE_SOURCE_DIR}/test/compare.py
+                   --exe ./unibi2openmensa
+                   --inp ${CMAKE_SOURCE_DIR}/test/in/${TEST}.xml
+                   --out ${CMAKE_SOURCE_DIR}/test/out/${TEST}.xml
+                   --ref ${CMAKE_SOURCE_DIR}/test/ref/${TEST}.xml
   )
 endforeach()
 
