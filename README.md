@@ -28,7 +28,7 @@ The repository contains a few golden tests, they can be executed via:
 For converting the HTML pages into the XML feed, they are first cleaned
 up into well-formed and conforming XHTML via [HTML Tidy][tidy].
 
-The generators are written in C++11 and heavily use [XPath][xpath] 2.0
+The generators are written in C++11 and heavily use [XPath][xpath]
 expressions.
 
 [Python][python] is used for the update and test scripts instead of Shell,
