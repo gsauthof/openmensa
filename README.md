@@ -5,7 +5,9 @@ Open Mensa Feed v2 Generators
 This repository contains a few programs for generating menus in the
 [Open Mensa Feed v2][feed] format:
 
-- fhrus2openmena.cc  - FH-Rüsselsheim Mensa page parser
+- fhrus2openmena.cc  - FH-Rüsselsheim Mensa page parser, also supports
+                       several other Mensas of the Studentenwerk
+                       Frankfurt
 - unibi2openmensa.cc - Bielefeld University Mensa page parser
 - update-mensa.py    - Feed updater
 

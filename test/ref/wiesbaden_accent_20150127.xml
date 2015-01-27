@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openmensa version="2.0"
+           xmlns="http://openmensa.org/open-mensa-v2"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
+  <canteen>
+    <day date='2015-01-26'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Kartoffelsuppe</name>
+          <note>(1, 2, 3, 5, G, I, L)</note>
+          <price role='student'>0.90</price>
+          <price role='employee'>2.5</price>
+          <price role='other'>2.5</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Pizza Birne-Camembert</name>
+          <note>(1, 2, A, G)</note>
+          <price role='student'>3.70</price>
+          <price role='employee'>5.3</price>
+          <price role='other'>5.3</price>
+        </meal>
+      </category>
+      <category name='Essen 3'>
+        <meal>
+          <name>Pizza Salami</name>
+          <note>(1, 2, 3, 4, 5, 6, A, G, I, J, 9)</note>
+          <price role='student'>3.70</price>
+          <price role='employee'>5.3</price>
+          <price role='other'>5.3</price>
+        </meal>
+      </category>
+      <category name='Essen 4'>
+        <meal>
+          <name>Sojabratwurst</name>
+          <note>mit Zwiebelsauce und einer Beilage nach Wahl (A, C, F, J)</note>
+          <price role='student'>1.60</price>
+          <price role='employee'>3.2</price>
+          <price role='other'>3.2</price>
+        </meal>
+      </category>
+      <category name='Essen 5'>
+        <meal>
+          <name>Spaghetti</name>
+          <note>mit Sauce Bolognese und einer Beilage nach Wahl (A)</note>
+          <price role='student'>2.60</price>
+          <price role='employee'>4.2</price>
+          <price role='other'>4.2</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-01-27'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Bifteki</name>
+          <note>mit Paprika-Tomatensauce und zwei Beilagen nach Wahl (A, C, F, G)</note>
+          <price role='student'>3.50</price>
+          <price role='employee'>5.1</price>
+          <price role='other'>5.1</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Gemüse-Haferpfanne</name>
+          <note>mit einer Beilage nach Wahl (A, I, J)</note>
+          <price role='student'>1.60</price>
+          <price role='employee'>3.2</price>
+          <price role='other'>3.2</price>
+        </meal>
+      </category>
+      <category name='Essen 3'>
+        <meal>
+          <name>Pilzcremesuppe</name>
+          <note>(G, L)</note>
+          <price role='student'>0.90</price>
+          <price role='employee'>2.5</price>
+          <price role='other'>2.5</price>
+        </meal>
+      </category>
+      <category name='Essen 4'>
+        <meal>
+          <name>Pizza Mexico</name>
+          <note>(1, 2, 3, 4, A, G, I)</note>
+          <price role='student'>3.70</price>
+          <price role='employee'>5.3</price>
+          <price role='other'>5.3</price>
+        </meal>
+      </category>
+      <category name='Essen 5'>
+        <meal>
+          <name>Pizza Schinken-Bergkäse</name>
+          <note>(1, 2, 3, A, G)</note>
+          <price role='student'>4.30</price>
+          <price role='employee'>5.9</price>
+          <price role='other'>5.9</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-01-28'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Makkaroni mit Paprikasahne, Hüttenkäse</name>
+          <note>und einer Beilage nach Wahl (A, G)</note>
+          <price role='student'>2.20</price>
+          <price role='employee'>3.8</price>
+          <price role='other'>3.8</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Panierte Hähnchenbrust mit Apfel-Ananasfüllung</name>
+          <note>mit Curry-Fruchtsauce und zwei Beilagen nach Wahl (A, G)</note>
+          <price role='student'>3.60</price>
+          <price role='employee'>5.2</price>
+          <price role='other'>5.2</price>
+        </meal>
+      </category>
+      <category name='Essen 3'>
+        <meal>
+          <name>Pizza Cabanossi</name>
+          <note>(1, 2, 3, 4, 5, 6, 8, A, G, J)</note>
+          <price role='student'>4.00</price>
+          <price role='employee'>5.6</price>
+          <price role='other'>5.6</price>
+        </meal>
+      </category>
+      <category name='Essen 4'>
+        <meal>
+          <name>Pizza Champignons</name>
+          <note>(1, 2, 3, 4, 5, A, G, L)</note>
+          <price role='student'>3.70</price>
+          <price role='employee'>5.3</price>
+          <price role='other'>5.3</price>
+        </meal>
+      </category>
+      <category name='Essen 5'>
+        <meal>
+          <name>Tschechische Knoblauch-Kartoffelsuppe</name>
+          <note>(5, G, I, L)</note>
+          <price role='student'>0.90</price>
+          <price role='employee'>2.5</price>
+          <price role='other'>2.5</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-01-29'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Aloo Gobi</name>
+          <note>mit einer Beilage nach Wahl (5)</note>
+          <price role='student'>1.70</price>
+          <price role='employee'>3.3</price>
+          <price role='other'>3.3</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Ciabattaburger mit Rosmarinmayonnaise</name>
+          <note>und Country Potatoes (1, A, C, F, G, H, I, J)</note>
+          <price role='student'>4.20</price>
+          <price role='employee'>5.8</price>
+          <price role='other'>5.8</price>
+        </meal>
+      </category>
+      <category name='Essen 3'>
+        <meal>
+          <name>Pizza Hähnchen-Ananas</name>
+          <note>(1, 2, 3, 4, 5, 6, 8, A, D, F, G, J, L)</note>
+          <price role='student'>4.30</price>
+          <price role='employee'>5.9</price>
+          <price role='other'>5.9</price>
+        </meal>
+      </category>
+      <category name='Essen 4'>
+        <meal>
+          <name>Pizza Margherita</name>
+          <note>(1, 2, A, G)</note>
+          <price role='student'>3.70</price>
+          <price role='employee'>5.3</price>
+          <price role='other'>5.3</price>
+        </meal>
+      </category>
+      <category name='Essen 5'>
+        <meal>
+          <name>Spinatcremesuppe</name>
+          <note>(1, 2, G, I, L)</note>
+          <price role='student'>0.90</price>
+          <price role='employee'>2.5</price>
+          <price role='other'>2.5</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-01-30'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Gemüse-Kartoffelsuppe</name>
+          <note>(5, F, G, I)</note>
+          <price role='student'>0.90</price>
+          <price role='employee'>2.5</price>
+          <price role='other'>2.5</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Kartoffelrösti mit Mozzarella, Lauch</name>
+          <note>und einer Beilage nach Wahl (G)</note>
+          <price role='student'>2.60</price>
+          <price role='employee'>4.2</price>
+          <price role='other'>4.2</price>
+        </meal>
+      </category>
+      <category name='Essen 3'>
+        <meal>
+          <name>Pizza Gorgonzola-Spinat</name>
+          <note>(1, 2, A, G)</note>
+          <price role='student'>3.70</price>
+          <price role='employee'>5.3</price>
+          <price role='other'>5.3</price>
+        </meal>
+      </category>
+      <category name='Essen 4'>
+        <meal>
+          <name>Pizza Peppone</name>
+          <note>(1, 2, 3, 4, 5, 6, 8, A, G, J)</note>
+          <price role='student'>3.70</price>
+          <price role='employee'>5.3</price>
+          <price role='other'>5.3</price>
+        </meal>
+      </category>
+      <category name='Essen 5'>
+        <meal>
+          <name>Schlemmerfilet Italiano</name>
+          <note>mit Sauce Vegetale und einer Beilage nach Wahl (A, D, G)</note>
+          <price role='student'>3.60</price>
+          <price role='employee'>5.2</price>
+          <price role='other'>5.2</price>
+        </meal>
+      </category>
+    </day>
+
+  </canteen>
+</openmensa>
