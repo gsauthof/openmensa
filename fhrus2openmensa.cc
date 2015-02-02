@@ -71,20 +71,10 @@ static const Node::PrefixNsMap namespaces = {
   { "xhtml", "http://www.w3.org/1999/xhtml" }
 };
 
-unsigned days(const Node *node)
+static string date(const Node *node)
 {
-  double d = node->eval_to_number(
-      "count(//xhtml:table[@class='tx_hmwbsffmmenu_menu date'])",
-      namespaces);
-  return boost::lexical_cast<unsigned>(d);
-}
-
-static string date(const Node *node, unsigned dow)
-{
-  string expr((boost::format(
-          "//xhtml:table[@class='tx_hmwbsffmmenu_menu date'][%1%]"
-          "/xhtml:tr/xhtml:td/xhtml:strong/text()") % dow).str());
-  string s(node->eval_to_string(expr, namespaces));
+  string s(node->eval_to_string(
+        "./xhtml:tr/xhtml:td/xhtml:strong/text()", namespaces));
 
   static const boost::regex re(R"(^[A-Za-z ,]+([0-9]{2})\.([0-9]{2})\.$)");
   boost::smatch m;
@@ -107,29 +97,22 @@ static string normalize_price(const string &s)
   }
 }
 
-static NodeSet names(const Node *node, unsigned dow)
+static NodeSet names(const Node *node)
 {
-  string expr((boost::format(
-          "//xhtml:table[@class='tx_hmwbsffmmenu_menu date'][%1%]/"
-          "xhtml:tr/xhtml:td/xhtml:div/xhtml:strong/text()") % dow).str());
-  auto r = node->find(expr, namespaces);
+  auto r = node->find("./xhtml:tr/xhtml:td/xhtml:div/xhtml:strong/text()",
+      namespaces);
   return std::move(r);
 }
-static NodeSet notes(const Node *node, unsigned dow)
+static NodeSet notes(const Node *node)
 {
-  string expr((boost::format(
-          "//xhtml:table[@class='tx_hmwbsffmmenu_menu date'][%1%]/"
-          "/xhtml:tr/xhtml:td/xhtml:div/xhtml:p/text()") % dow).str());
-  auto r = node->find(expr, namespaces);
+  auto r = node->find("./xhtml:tr/xhtml:td/xhtml:div/xhtml:p/text()",
+      namespaces);
   return std::move(r);
 }
-static NodeSet prices(const Node *node, unsigned dow)
+static NodeSet prices(const Node *node)
 {
-  string expr((boost::format(
-          "//xhtml:table[@class='tx_hmwbsffmmenu_menu date'][%1%]/"
-          "/xhtml:tr/xhtml:td/xhtml:p[@class='price']/xhtml:strong/text()")
-        % dow).str());
-  auto r = node->find(expr, namespaces);
+  auto r = node->find("./xhtml:tr/xhtml:td/xhtml:p[@class='price']/xhtml:strong/text()",
+      namespaces);
   return std::move(r);
 }
 
@@ -140,13 +123,13 @@ static mp::cpp_dec_float_50 guest_price(const string &s)
   return r + x;
 }
 
-static void gen_dow(const Node *root, unsigned dow, ostream &o)
+static void gen_dow(const Node *node, ostream &o)
 {
-  string d(std::move(date(root, dow)));
+  string d(std::move(date(node)));
   o << "    <day date='" << d << "'>\n";
-  NodeSet n(std::move(names(root, dow)));
-  NodeSet m(std::move(notes(root, dow)));
-  NodeSet p(std::move(prices(root, dow)));
+  NodeSet n(std::move(names(node)));
+  NodeSet m(std::move(notes(node)));
+  NodeSet p(std::move(prices(node)));
   auto i = n.begin();
   auto j = m.begin();
   auto k = p.begin();
@@ -180,9 +163,10 @@ static void generate_openmensa(const Node *root, ostream &o)
            xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
 )";
-  unsigned n = days(root);
-  for (unsigned i = 1; i<=n; ++i)
-    gen_dow(root, i, o);
+  auto days = root->find("//xhtml:div[@class='dates']/xhtml:table",
+      namespaces);
+  for (auto day : days)
+    gen_dow(day, o);
   o << R"(
   </canteen>
 </openmensa>
