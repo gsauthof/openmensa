@@ -67,6 +67,7 @@ set(UNIBI_TESTS
   unibi_20150119
   unibi_20150112
   unibi_holiday
+  unibi_noname
   )
 foreach(TEST ${UNIBI_TESTS})
   add_test(NAME ${TEST}
