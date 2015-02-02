@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openmensa version="2.0"
+           xmlns="http://openmensa.org/open-mensa-v2"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
+  <canteen>
+    <day date='2015-02-02'>
+      <category name='Tagesmenü'>
+        <meal>
+          <name>Hähnchenbrust mit Frischkäsetopping</name>
+          <note>mit Geflügel</note>
+          <note>mit Tomatensoße Es können 3 Wahlbeilagen gewählt werden: Schnittlauchkartoffeln vegan, Penne Rigate, vegan, Pariser Karotten vegan, Kohlrabi in Sahnesoße, Erdbeerjoghurt, Sauerkirsch-Dickmilch oder Irish Coffee-Dessert</note>
+          <price role='student'>2.40</price>
+          <price role='employee'>3.80</price>
+          <price role='other'>4.50</price>
+        </meal>
+      </category>
+      <category name='Menü vegetarisch'>
+        <meal>
+          <name>Broccoli-Käseschnitte</name>
+          <note>vegetarisch</note>
+          <note>mit Kräutersoße Es können 3 Wahlbeilagen gewählt werden: Schnittlauchkartoffeln vegan, Penne Rigate, vegan, Pariser Karotten vegan, Kohlrabi in Sahnesoße, Erdbeerjoghurt, Sauerkirsch-Dickmilch oder Irish Coffee-Dessert</note>
+          <price role='student'>2.40</price>
+          <price role='employee'>3.80</price>
+          <price role='other'>4.50</price>
+        </meal>
+      </category>
+      <category name='Mensa vital'>
+        <meal>
+          <name>Seelachswürfel mit Kirschtomaten</name>
+          <note>mit Fisch</note>
+          <note>mit Weißwein-Limonensoße Dazu gibt es: Pasta kcal: 716, F: 34g, E: 37g, KH: 54g</note>
+          <price role='student'>3.45</price>
+          <price role='employee'>4.85</price>
+          <price role='other'>5.55</price>
+        </meal>
+      </category>
+      <category name='Eintopf / Suppe'>
+        <meal>
+          <name>Erbseneintopf</name>
+          <note>Dazu gibt es: gebratenes Soja oder Rauchend</note>
+          <price role='student'>1.80</price>
+          <price role='employee'>2.80</price>
+          <price role='other'>3.50</price>
+        </meal>
+        <meal>
+          <name>Rinderbrühe mit Einlage</name>
+          <note>mit Rind</note>
+          <price role='other'>0.80</price>
+        </meal>
+      </category>
+      <category name='Aktions-Theke'>
+        <meal>
+          <name>"Mantaplatte" - Currywurst frisch vom Grill</name>
+          <note>mit Schwein</note>
+          <note>Dazu gibt es: Pommes frites und Majonäse</note>
+          <price role='other'>3.00</price>
+        </meal>
+        <meal>
+          <name>Pommes frites</name>
+          <note>mit Majonäse oder Ketchup auch zum Mitnehmen!!</note>
+          <price role='other'>1.20</price>
+        </meal>
+        <meal>
+          <name>Verschiedene Pastasorten mit Soße, Toppings nach Wahl</name>
+          <note>Preis pro 100g</note>
+          <price role='student'>0.75</price>
+          <price role='employee'>0.80</price>
+          <price role='other'>0.90</price>
+        </meal>
+      </category>
+      <category name='Salatbuffet'>
+        <meal>
+          <name>Rohkostsalate, Dressings, hausgemachte Feinkostsalate</name>
+          <note>Preis pro 100g</note>
+          <price role='student'>0.75</price>
+          <price role='employee'>0.80</price>
+          <price role='other'>0.90</price>
+        </meal>
+      </category>
+      <category name='Beilagenbuffet'>
+        <meal>
+          <name>Täglich wechselnde warme Beilagen.</name>
+          <note>Preis pro 100g</note>
+          <price role='student'>0.75</price>
+          <price role='employee'>0.80</price>
+          <price role='other'>0.90</price>
+        </meal>
+      </category>
+      <category name='Dessertbuffet'>
+        <meal>
+          <name>Blätterteigdessert "Tartufata"</name>
+          <price role='other'>1.80</price>
+        </meal>
+        <meal>
+          <name>Himbeer-Pfirsich-Schichtdessert</name>
+          <price role='other'>1.50</price>
+        </meal>
+        <meal>
+          <name>Hausgemachte Milchshakes</name>
+          <price role='other'>1.20</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-02-03'>
+      <category name='Tagesmenü'>
+        <meal>
+          <name>Seelachs im Backteig</name>
+          <note>mit Fisch</note>
+          <note>mit Senfsoße Es können 3 Wahlbeilagen gewählt werden: Salzkartoffeln vegan, Reis vegan, Kaisergemüse vegan, Prinzessbohnen vegan, Götterspeise, Pfirsich-Dickmilch oder Vanillepudding</note>
+          <price role='student'>2.40</price>
+          <price role='employee'>3.80</price>
+          <price role='other'>4.50</price>
+        </meal>
+      </category>
+      <category name='Menü vegetarisch'>
+        <meal>
+          <name>Spätzlepfanne</name>
+          <note>vegetarisch</note>
+          <note>mit Pilzen und Gemüse Es können 3 Wahlbeilagen gewählt werden: Salzkartoffeln vegan, Bulgurpfanne vegan, Kaisergemüse vegan, Prinzessbohnen vegan, Götterspeise, Pfirsich-Dickmilch oder Vanillepudding</note>
+          <price role='student'>2.40</price>
+          <price role='employee'>3.80</price>
+          <price role='other'>4.50</price>
+        </meal>
+      </category>
+      <category name='Mensa vital'>
+        <meal>
+          <name>Kalbsgeschnetzeltes mit Kräuterspätzle</name>
+          <note>mit Rind</note>
+          <note>kcal: 457, F: 18g, E: 38g, KH:36 g</note>
+          <price role='student'>3.45</price>
+          <price role='employee'>4.85</price>
+          <price role='other'>5.55</price>
+        </meal>
+      </category>
+      <category name='Eintopf / Suppe'>
+        <meal>
+          <name>Bäuerinsuppe</name>
+          <note>Dazu gibt es: gebratenes Soja oder Bockwurst</note>
+          <price role='student'>1.80</price>
+          <price role='employee'>2.80</price>
+          <price role='other'>3.50</price>
+        </meal>
+        <meal>
+          <name>Broccolicremesuppe vegan</name>
+          <note>nur vegan</note>
+          <price role='other'>0.80</price>
+        </meal>
+      </category>
+      <category name='Mensa kulinarisch'>
+        <meal>
+          <name>Deftiger Grünkohl</name>
+          <note>mit Schwein</note>
+          <note>mit Salzkartoffeln, dazu Kassler oder Kohlwurst Wahlbeilagen sind nicht im Preis enthalten</note>
+          <price role='other'>3.00</price>
+        </meal>
+      </category>
+      <category name='Aktions-Theke'>
+        <meal>
+          <name>"Mantaplatte" - Currywurst frisch vom Grill</name>
+          <note>mit Schwein</note>
+          <note>Dazu gibt es: Pommes frites und Majonäse</note>
+          <price role='other'>3.00</price>
+        </meal>
+        <meal>
+          <name>Pommes frites</name>
+          <note>mit Majonäse oder Ketchup auch zum Mitnehmen!!</note>
+          <price role='other'>1.20</price>
+        </meal>
+        <meal>
+          <name>Verschiedene Pastasorten mit Soße, Toppings nach Wahl</name>
+          <note>Preis pro 100g</note>
+          <price role='student'>0.75</price>
+          <price role='employee'>0.80</price>
+          <price role='other'>0.90</price>
+        </meal>
+      </category>
+      <category name='Salatbuffet'>
+        <meal>
+          <name>Rohkostsalate, Dressings, hausgemachte Feinkostsalate</name>
+          <note>Preis pro 100g</note>
+          <price role='student'>0.75</price>
+          <price role='employee'>0.80</price>
+          <price role='other'>0.90</price>
+        </meal>
+      </category>
+      <category name='Beilagenbuffet'>
+        <meal>
+          <name>Täglich wechselnde warme Beilagen.</name>
+          <note>Preis pro 100g</note>
+          <price role='student'>0.75</price>
+          <price role='employee'>0.80</price>
+          <price role='other'>0.90</price>
+        </meal>
+      </category>
+      <category name='Dessertbuffet'>
+        <meal>
+          <name>Mini Germknödel</name>
+          <note>mit Kirschfüllung</note>
+          <price role='other'>1.80</price>
+        </meal>
+        <meal>
+          <name>Cappuccinocreme</name>
+          <price role='other'>1.20</price>
+        </meal>
+        <meal>
+          <name>Hausgemachte Milchshakes</name>
+          <price role='other'>1.20</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-02-04'>
+      <category name='Tagesmenü'>
+        <meal>
+          <name>Hackbraten</name>
+          <note>mit Schwein</note>
+          <note>mit Bratensoße Es können 3 Wahlbeilagen gewählt werden: Kartoffelpüree, Bulgurpfanne vegan, Möhren in Rahm, Mandelbroccoli vegan, Stracciatella-Quark, Erdbeer-Dickmilch oder Schwedische Apfelcreme</note>
+          <price role='student'>2.40</price>
+          <price role='employee'>3.80</price>
+          <price role='other'>4.50</price>
+        </meal>
+      </category>
+      <category name='Menü vegetarisch'>
+        <meal>
+          <name>Falafel</name>
+          <note>vegetarisch</note>
+          <note>mit Chili-Minz-Dip Es können 3 Wahlbeilagen gewählt werden: Sesamkartoffeln vegan, Bulgurpfanne vegan, Möhren in Rahm, Mandelbroccoli vegan, Stracciatella-Quark, Erdbeer-Dickmilch oder Schwedische Apfelcreme</note>
+          <price role='student'>2.40</price>
+          <price role='employee'>3.80</price>
+          <price role='other'>4.50</price>
+        </meal>
+      </category>
+      <category name='Mensa vital'>
+        <meal>
+          <name>Polenta-Bruschetta (enthält Knoblauch) mit Salat und Joghurt-Dip</name>
+          <note>vegetarisch</note>
+          <note>kcal: 630, F: 21g, E: 23g, KH: 89g</note>
+          <price role='student'>2.60</price>
+          <price role='employee'>4.00</price>
+          <price role='other'>4.70</price>
+        </meal>
+      </category>
+      <category name='Eintopf / Suppe'>
+        <meal>
+          <name>Mexikanischer Eintopf</name>
+          <note>Dazu gibt es: gebratenes Soja oder gebratenes Rinderhack</note>
+          <price role='student'>1.80</price>
+          <price role='employee'>2.80</price>
+          <price role='other'>3.50</price>
+        </meal>
+        <meal>
+          <name>Blumenkohlcremesuppe vegan</name>
+          <note>nur vegan</note>
+          <price role='other'>0.80</price>
+        </meal>
+      </category>
+      <category name='Aktions-Theke'>
+        <meal>
+          <name>"Mantaplatte" - Currywurst frisch vom Grill</name>
+          <note>mit Schwein</note>
+          <note>Dazu gibt es: Pommes frites und Majonäse</note>
+          <price role='other'>3.00</price>
+        </meal>
+        <meal>
+          <name>Pommes frites</name>
+          <note>mit Majonäse oder Ketchup auch zum Mitnehmen!!</note>
+          <price role='other'>1.20</price>
+        </meal>
+        <meal>
+          <name>Verschiedene Pastasorten mit Soße</name>
+          <note>Preis pro 100 g</note>
+          <price role='student'>0.75</price>
+          <price role='employee'>0.80</price>
+          <price role='other'>0.90</price>
+        </meal>
+      </category>
+      <category name='Salatbuffet'>
+        <meal>
+          <name>Rohkostsalate, Dressings, hausgemachte Feinkostsalate</name>
+          <note>Preis pro 100 g</note>
+          <price role='student'>0.75</price>
+          <price role='employee'>0.80</price>
+          <price role='other'>0.90</price>
+        </meal>
+      </category>
+      <category name='Beilagenbuffet'>
+        <meal>
+          <name>Täglich wechselnde warme Beilagen.</name>
+          <note>Preis pro 100 g</note>
+          <price role='student'>0.75</price>
+          <price role='employee'>0.80</price>
+          <price role='other'>0.90</price>
+        </meal>
+      </category>
+      <category name='Dessertbuffet'>
+        <meal>
+          <name>Bayrisch Creme</name>
+          <note>mit Roter Grütze</note>
+          <price role='other'>1.50</price>
+        </meal>
+        <meal>
+          <name>Mandel-Bienenstichkuchen</name>
+          <price role='other'>1.50</price>
+        </meal>
+        <meal>
+          <name>Hausgemachte Milchshakes</name>
+          <price role='other'>1.20</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-02-05'>
+      <category name='Tagesmenü'>
+        <meal>
+          <name>mit Champignonrahmsoße</name>
+          <note>mit Schwein</note>
+          <note>Es können 3 Wahlbeilagen gewählt werden: Spätzle, Bulgurpfanne vegan, Blumenkohl vegan, Balkangemüse vegan, Schokoladenpudding vegan, Müsli-Joghurt oder Zitronenquark</note>
+          <price role='student'>2.40</price>
+          <price role='employee'>3.80</price>
+          <price role='other'>4.50</price>
+        </meal>
+      </category>
+      <category name='Menü vegetarisch'>
+        <meal>
+          <name>Indisches Sojageschnetzeltes</name>
+          <note>vegetarisch</note>
+          <note>Es können 3 Wahlbeilagen gewählt werden: Paprikareis vegan, Bulgurpfanne vegan, Blumenkohl vegan, Balkangemüse vegan, Wokgemüse vegan, Schokoladenpudding vegan, Müsli-Joghurt oder Zitronenquark</note>
+          <price role='student'>2.40</price>
+          <price role='employee'>3.80</price>
+          <price role='other'>4.50</price>
+        </meal>
+      </category>
+      <category name='Mensa vital'>
+        <meal>
+          <name>Pochiertes Lachsfilet mit Karotten-Fenchelgemüse und Petersilienkartoffeln</name>
+          <note>mit Fisch</note>
+          <note>kcal: 665, F: 12g, E: 47g, KH: 86g</note>
+          <price role='student'>3.45</price>
+          <price role='employee'>4.85</price>
+          <price role='other'>5.55</price>
+        </meal>
+      </category>
+      <category name='Eintopf / Suppe'>
+        <meal>
+          <name>Russischer Borschtsch (ohne saure Sahne)</name>
+          <note>Dazu gibt es: gebratenes Soja oder Krakauer Wurst</note>
+          <price role='student'>1.80</price>
+          <price role='employee'>2.80</price>
+          <price role='other'>3.50</price>
+        </meal>
+        <meal>
+          <name>Süßkartoffel-Kokossuppe vegan</name>
+          <note>nur vegan</note>
+          <price role='other'>0.80</price>
+        </meal>
+      </category>
+      <category name='Mensa kulinarisch'>
+        <meal>
+          <name>Hausgemachter Sauerbraten</name>
+          <note>mit Rind</note>
+          <note>mit Apfelrotkohl und Kartoffelklßen Wahlbeilagen sind nicht im Preis enthalten</note>
+          <price role='other'>4.50</price>
+        </meal>
+      </category>
+      <category name='Aktions-Theke'>
+        <meal>
+          <name>"Mantaplatte" - Currywurst frisch vom Grill</name>
+          <note>mit Schwein</note>
+          <note>Dazu gibt es: Pommes frites und Majonäse</note>
+          <price role='other'>3.00</price>
+        </meal>
+        <meal>
+          <name>Pommes frites</name>
+          <note>mit Majonäse oder Ketchup auch zum Mitnehmen!!</note>
+          <price role='other'>1.20</price>
+        </meal>
+        <meal>
+          <name>Verschiedene Pastasorten mit Soße, Toppings nach Wahl</name>
+          <note>Preis pro 100 g</note>
+          <price role='student'>0.75</price>
+          <price role='employee'>0.80</price>
+          <price role='other'>0.90</price>
+        </meal>
+      </category>
+      <category name='Salatbuffet'>
+        <meal>
+          <name>Rohkostsalate, Dressings, hausgemachte Feinkostsalate</name>
+          <note>Preis pro 100 g</note>
+          <price role='student'>0.75</price>
+          <price role='employee'>0.80</price>
+          <price role='other'>0.90</price>
+        </meal>
+      </category>
+      <category name='Beilagenbuffet'>
+        <meal>
+          <name>Täglich wechselnde warme Beilagen.</name>
+          <note>Preis pro 100 g</note>
+          <price role='student'>0.75</price>
+          <price role='employee'>0.80</price>
+          <price role='other'>0.90</price>
+        </meal>
+      </category>
+      <category name='Dessertbuffet'>
+        <meal>
+          <name>Apple Crumble</name>
+          <note>mit Vanillesoße</note>
+          <price role='other'>1.80</price>
+        </meal>
+        <meal>
+          <name>Tiramisu</name>
+          <price role='other'>1.50</price>
+        </meal>
+        <meal>
+          <name>Hausgemachte Milchshakes</name>
+          <price role='other'>1.20</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-02-06'>
+      <category name='Tagesmenü'>
+        <meal>
+          <name>Köfte vom Rind</name>
+          <note>mit Rind</note>
+          <note>mit Ajvar Es können 3 Wahlbeilagen gewählt werden: Thymiankartoffeln, Couscous vegan, Zucchini-Tomatengemüse vegan, Leipziger Allerlei vegan, Ananasquark oder Himbeerjoghurt</note>
+          <price role='student'>2.40</price>
+          <price role='employee'>3.80</price>
+          <price role='other'>4.50</price>
+        </meal>
+      </category>
+      <category name='Menü vegetarisch'>
+        <meal>
+          <name>Spinat-Knuspermedaillon</name>
+          <note>vegetarisch</note>
+          <note>mit Paprikasoße Es können 3 Wahlbeilagen gewählt werden: Thymiankartoffeln, Couscous vegan, Zucchini-Tomatengemüse vegan, Leipziger Allerlei vegan, Ananasquark oder Himbeerjoghurt</note>
+          <price role='student'>2.40</price>
+          <price role='employee'>3.80</price>
+          <price role='other'>4.50</price>
+        </meal>
+      </category>
+      <category name='Mensa vital'>
+        <meal>
+          <name>Schweinegeschnetzeltes mit Balsamicobohnen und Reis</name>
+          <note>mit Schwein</note>
+          <note>kcal: 953, F: 57g, E: 33g, KH: 77g</note>
+          <price role='student'>3.45</price>
+          <price role='employee'>4.85</price>
+          <price role='other'>5.55</price>
+        </meal>
+      </category>
+      <category name='Eintopf / Suppe'>
+        <meal>
+          <name>Eintopf aus Tomaten, Champignons und Kartoffeln</name>
+          <note>Dazu gibt es: gebratenes Soja oder gebratenes Schweinefleisch</note>
+          <price role='student'>1.80</price>
+          <price role='employee'>2.80</price>
+          <price role='other'>3.50</price>
+        </meal>
+      </category>
+      <category name='Aktions-Theke'>
+        <meal>
+          <name>"Mantaplatte" - Currywurst frisch vom Grill</name>
+          <note>mit Schwein</note>
+          <note>Dazu gibt es: Pommes frites und Majonäse</note>
+          <price role='other'>3.00</price>
+        </meal>
+        <meal>
+          <name>Pommes frites</name>
+          <note>mit Majonäse oder Ketchup auch zum Mitnehmen!!</note>
+          <price role='other'>1.20</price>
+        </meal>
+        <meal>
+          <name>Verschiedene Pastasorten mit Soße, Toppings nach Wahl</name>
+          <note>Preis pro 100 g</note>
+          <price role='student'>0.75</price>
+          <price role='employee'>0.80</price>
+          <price role='other'>0.90</price>
+        </meal>
+      </category>
+      <category name='Salatbuffet'>
+        <meal>
+          <name>Rohkostsalate, Dressings, hausgemachte Feinkostsalate</name>
+          <note>Preis pro 100 g</note>
+          <price role='student'>0.75</price>
+          <price role='employee'>0.80</price>
+          <price role='other'>0.90</price>
+        </meal>
+      </category>
+      <category name='Beilagenbuffet'>
+        <meal>
+          <name>Täglich wechselnde warme Beilagen.</name>
+          <note>Preis pro 100 g</note>
+          <price role='student'>0.75</price>
+          <price role='employee'>0.80</price>
+          <price role='other'>0.90</price>
+        </meal>
+      </category>
+      <category name='Dessertbuffet'>
+        <meal>
+          <name>Apfelpfannkuchen</name>
+          <note>mit weisser Schokosoße</note>
+          <price role='other'>1.80</price>
+        </meal>
+        <meal>
+          <name>Mousse au Chocolat</name>
+          <price role='other'>1.20</price>
+        </meal>
+        <meal>
+          <name>Hausgemachte Milchshakes</name>
+          <price role='other'>1.20</price>
+        </meal>
+      </category>
+    </day>
+
+  </canteen>
+</openmensa>

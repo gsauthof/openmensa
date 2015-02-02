@@ -1,0 +1,2591 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org" />
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=utf-8" />
+  <base href="http://www.studentenwerkbielefeld.de/" />
+  <meta name="generator" content="TYPO3 4.5 CMS" />
+  <link rel="stylesheet" type="text/css" href=
+  "typo3temp/stylesheet_7af74d23d7.css?1401963290" media="all" />
+  <link rel="stylesheet" type="text/css" href=
+  "fileadmin/templates/main/css/layout_2col_fixed.css?1190889332"
+  media="all" />
+  <link rel="stylesheet" type="text/css" href=
+  "typo3conf/ext/hd_mensaplan/pi1/css/speiseplan.css?1407502628"
+  media="all" />
+  <link rel="stylesheet" type="text/css" href=
+  "fileadmin/templates/main/css/print/print_100.css?1201165075"
+  media="print" />
+  <script src="typo3temp/javascript_b9328db19d.js?1251723762" type=
+  "text/javascript">
+</script>
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=utf-8" />
+
+  <title>Studentenwerk Bielefeld - Mensa</title>
+  <meta http-equiv="imagetoolbar" content="no" />
+  <meta http-equiv="imagetoolbar" content="false" />
+  <meta http-equiv="language" content="de" />
+  <script type="text/javascript" src=
+  "fileadmin/templates/main/js/prototype.js">
+</script>
+  <script type="text/javascript" src=
+  "fileadmin/templates/main/js/scriptaculous.js?load=effects">
+</script>
+  <script type="text/javascript" src=
+  "fileadmin/templates/main/js/sb-scripts.js">
+</script>
+  <style type="text/css">
+/*<![CDATA[*/
+  p.c1 {font-weight: bold}
+  /*]]>*/
+  </style>
+</head>
+
+<body id="gastro">
+  <div id="skipnav"></div>
+
+  <div id="page_margins">
+    <div id="page" class="hold_floats twoCols">
+      <div id="header">
+        <a href="/" title="Studentenwerk Bielefeld"><img src=
+        "fileadmin/templates/main/img/logo_gastro.gif" alt=
+        "Studentenwerk Bielefeld - Logo" /></a>
+
+        <div class="searchbox tx-macinasearchbox-pi1">
+          <form action="index.php?id=134&amp;L=0" method="post"
+          name="searchform" id="searchform">
+            <input class="searchinput" name=
+            "tx_indexedsearch[sword]" type="text" /><input class=
+            "searchbut" name="tx_indexedsearch[submit_button]"
+            type="image" src=
+            "fileadmin/templates/main/img/search_submit.gif" value=
+            "Suchen" /> <input type="hidden" name=
+            "tx_indexedsearch[_sections]" value="0" /> <input type=
+            "hidden" name="tx_indexedsearch[pointer]" value="0" />
+            <input type="hidden" name="tx_indexedsearch[ext]"
+            value="0" /> <input type="hidden" name=
+            "tx_indexedsearch[lang]" value="0" />
+          </form>
+        </div>
+
+        <div id="header_box">
+          <img src="uploads/media/header-essen2.jpg" /> <a id=
+          "metamenue" name="metamenue"></a>
+
+          <h1 class="blinded">Metamenü:</h1>
+
+          <ul id="fnav">
+            <li id="fnav_home"><a href="index.php?id=133" title=
+            "Home" onfocus="blurLink(this);">Home</a></li>
+
+            <li id="fnav_sitemap"><a href="index.php?id=132" title=
+            "Sitemap" onfocus="blurLink(this);">Sitemap</a></li>
+
+            <li id="fnav_kontakt"><a href="index.php?id=131" title=
+            "Kontakt" onfocus="blurLink(this);">Kontakt</a></li>
+
+            <li id="fnav_impressum"><a href="index.php?id=130"
+            title="Impressum" onfocus=
+            "blurLink(this);">Impressum</a></li>
+
+            <li id="fnav_newsletter"><a href="index.php?id=129"
+            title="Speiseplan" onfocus=
+            "blurLink(this);">Speiseplan</a></li>
+          </ul>
+
+          <ul id="flags">
+            <li class="act"><a href=
+            "index.php?id=61&amp;tx_studentenwerk_pi1%5Bweek%5D=1&amp;L=0&amp;cHash=1c76e2f2395314d34ced83819fbcfd6c"
+            title="Deutsch"><img src=
+            "fileadmin/templates/main/img/flags/de.gif" border="0"
+            alt="Deutsch" /></a></li>
+
+            <li><a href=
+            "index.php?id=61&amp;tx_studentenwerk_pi1%5Bweek%5D=1&amp;L=1&amp;cHash=911d80594370cb4439a57323e94388cc"
+            title="???????"><img src=
+            "fileadmin/templates/main/img/flags/ru.gif" border="0"
+            alt="???????" /></a></li>
+
+            <li><a href=
+            "index.php?id=61&amp;tx_studentenwerk_pi1%5Bweek%5D=1&amp;L=3&amp;cHash=1f6318f0fab916720030cd6fd3356bec"
+            title="English"><img src=
+            "fileadmin/templates/main/img/flags/en.gif" border="0"
+            alt="English" /></a></li>
+
+            <li><a href=
+            "index.php?id=61&amp;tx_studentenwerk_pi1%5Bweek%5D=1&amp;L=4&amp;cHash=b78d7720c3326b29fc2db644970385ec"
+            title="??"><img src=
+            "fileadmin/templates/main/img/flags/zh_HK.gif" border=
+            "0" alt="??" /></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="main">
+        <div id="col1">
+          <a id="hauptmenue" name="hauptmenue"></a>
+
+          <h1 class="blinded">Hauptmenü:</h1>
+
+          <div id="col1_content" class="clearfix">
+            <ul id="sbnav">
+              <li class="normal"><a href="index.php?id=14" title=
+              "Aktuelles (ALT+A)" onfocus="blurLink(this);"
+              accesskey="A">Aktuelles</a></li>
+
+              <li class="normal"><a href="index.php?id=365" title=
+              "Stellenausschreibungen (ALT+S)" onfocus=
+              "blurLink(this);" accesskey=
+              "S">Stellenausschreibungen</a></li>
+
+              <li class="normal"><a href="index.php?id=11" title=
+              "Wir über uns (ALT+W)" onfocus="blurLink(this);"
+              accesskey="W">Wir über uns</a></li>
+
+              <li class="bafoeg"><a href="index.php?id=7" title=
+              "BAföG/Studienfinanzierung (ALT+B)" onfocus=
+              "blurLink(this);" accesskey=
+              "B">BAföG/Studienfinanzierung</a></li>
+
+              <li class="nav_selected">
+                <a href="index.php?id=6" title=
+                "Essen und Trinken (ALT+E)" onfocus=
+                "blurLink(this);" accesskey="E">Essen und
+                Trinken</a>
+
+                <ul id="sbsubnav">
+                  <li><a href="index.php?id=310" title=
+                  "Online-Gästebefragung (ALT+O)" onfocus=
+                  "blurLink(this);" accesskey=
+                  "O">Online-Gästebefragung</a></li>
+
+                  <li class="subnav_selected">
+                    <a href="index.php?id=53" title=
+                    "Uni-Bielefeld, Universitätsstraße (ALT+U)"
+                    onfocus="blurLink(this);" accesskey=
+                    "U">Uni-Bielefeld, Universitätsstraße</a>
+
+                    <ul class="third">
+                      <li class="act first"><a href=
+                      "index.php?id=61" title="Mensa (ALT+M)"
+                      onfocus="blurLink(this);" accesskey=
+                      "M">Mensa</a></li>
+
+                      <li><a href="index.php?id=60" title=
+                      "Westend-Cafeteria (ALT+T)" onfocus=
+                      "blurLink(this);" accesskey=
+                      "T">Westend-Cafeteria</a></li>
+
+                      <li><a href="index.php?id=59" title=
+                      "Westend-Poolbar (ALT+N)" onfocus=
+                      "blurLink(this);" accesskey=
+                      "N">Westend-Poolbar</a></li>
+
+                      <li><a href="index.php?id=58" title=
+                      "Cafeteria UHG (ALT+C)" onfocus=
+                      "blurLink(this);" accesskey="C">Cafeteria
+                      UHG</a></li>
+
+                      <li><a href="index.php?id=476" title=
+                      "Cafeteria Gebäude X (ALT+F)" onfocus=
+                      "blurLink(this);" accesskey="F">Cafeteria
+                      Gebäude X</a></li>
+
+                      <li><a href="index.php?id=57" title=
+                      "Stehcafeteria (ALT+H)" onfocus=
+                      "blurLink(this);" accesskey=
+                      "H">Stehcafeteria</a></li>
+
+                      <li class="last"><a href="index.php?id=56"
+                      title="Café-Bar (ALT+R)" onfocus=
+                      "blurLink(this);" accesskey=
+                      "R">Café-Bar</a></li>
+                    </ul>
+                  </li>
+
+                  <li><a href="index.php?id=421" title=
+                  "Bistro Morgenbreede (ALT+I)" onfocus=
+                  "blurLink(this);" accesskey="I">Bistro
+                  Morgenbreede</a></li>
+
+                  <li><a href="index.php?id=52" title=
+                  "FH Bielefeld, Kurt-Schumacher-Straße (ALT+L)"
+                  onfocus="blurLink(this);" accesskey="L">FH
+                  Bielefeld, Kurt-Schumacher-Straße</a></li>
+
+                  <li><a href="index.php?id=51" title=
+                  "FH Bielefeld, Wilhelm-Bertelsmann-Straße (ALT+D)"
+                  onfocus="blurLink(this);" accesskey="D">FH
+                  Bielefeld, Wilhelm-Bertelsmann-Straße</a></li>
+
+                  <li><a href="index.php?id=50" title=
+                  "FH Bielefeld, Lampingstraße (ALT+P)" onfocus=
+                  "blurLink(this);" accesskey="P">FH Bielefeld,
+                  Lampingstraße</a></li>
+
+                  <li><a href="index.php?id=49" title=
+                  "FH Bielefeld, Am Stadtholz (ALT+Z)" onfocus=
+                  "blurLink(this);" accesskey="Z">FH Bielefeld, Am
+                  Stadtholz</a></li>
+
+                  <li><a href="index.php?id=48" title=
+                  "FH Bielefeld, Minden" onfocus=
+                  "blurLink(this);">FH Bielefeld, Minden</a></li>
+
+                  <li><a href="index.php?id=47" title=
+                  "Hochschule OWL, Detmold, Emilienstraße" onfocus=
+                  "blurLink(this);">Hochschule OWL, Detmold,
+                  Emilienstraße</a></li>
+
+                  <li><a href="index.php?id=46" title=
+                  "Hochschule OWL, Lemgo, Liebigstraße (ALT+G)"
+                  onfocus="blurLink(this);" accesskey=
+                  "G">Hochschule OWL, Lemgo, Liebigstraße</a></li>
+
+                  <li><a href="index.php?id=45" title=
+                  "Hochschule OWL, Höxter, An der Wilhelmshöhe (ALT+X)"
+                  onfocus="blurLink(this);" accesskey=
+                  "X">Hochschule OWL, Höxter, An der
+                  Wilhelmshöhe</a></li>
+
+                  <li><a href="index.php?id=55" title=
+                  "Hochschule für Musik, Detmold, Neustadt (ALT+K)"
+                  onfocus="blurLink(this);" accesskey=
+                  "K">Hochschule für Musik, Detmold,
+                  Neustadt</a></li>
+
+                  <li><a href="index.php?id=426" title=
+                  "Tagungsservice (ALT+V)" onfocus=
+                  "blurLink(this);" accesskey=
+                  "V">Tagungsservice</a></li>
+
+                  <li><a href="index.php?id=54" title="Catering"
+                  onfocus="blurLink(this);">Catering</a></li>
+
+                  <li><a href="index.php?id=467" title=
+                  "Allgemeine Geschäftsbedingungen" onfocus=
+                  "blurLink(this);">Allgemeine
+                  Geschäftsbedingungen</a></li>
+
+                  <li><a href="index.php?id=297" title=
+                  "Schul- und Kita-Catering" onfocus=
+                  "blurLink(this);">Schul- und
+                  Kita-Catering</a></li>
+
+                  <li><a href="index.php?id=389" onfocus=
+                  "blurLink(this);"></a></li>
+
+                  <li><a href="index.php?id=77" title=
+                  "Küchenphilosophie" onfocus=
+                  "blurLink(this);">Küchenphilosophie</a></li>
+                </ul>
+              </li>
+
+              <li class="normal"><a href="index.php?id=19" title=
+              "Zahlung per Chipkarte" onfocus=
+              "blurLink(this);">Zahlung per Chipkarte</a></li>
+
+              <li class="wohnen"><a href="index.php?id=18" title=
+              "Wohnen" onfocus="blurLink(this);">Wohnen</a></li>
+
+              <li class="kita"><a href="index.php?id=17" title=
+              "Kinder" onfocus="blurLink(this);">Kinder</a></li>
+
+              <li class="normal"><a href="index.php?id=16" title=
+              "Infos rund ums Studium" onfocus=
+              "blurLink(this);">Infos rund ums Studium</a></li>
+
+              <li class="normal"><a href="index.php?id=15" title=
+              "Berufsausbildung" onfocus=
+              "blurLink(this);">Berufsausbildung</a></li>
+
+              <li class="normal"><a href="index.php?id=257" title=
+              "Fotogalerien" onfocus=
+              "blurLink(this);">Fotogalerien</a></li>
+
+              <li class="normal"><a href="index.php?id=9" title=
+              "Kontakt" onfocus="blurLink(this);">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="col2">
+          <a id="inhalt" name="inhalt"></a>
+
+          <h1 class="blinded">Inhalt:</h1>
+
+          <h1>Mensa</h1>
+
+          <div id="col2_content" class="clearfix">
+            <div id="c578" class="csc-default">
+              <div id="mensaplan">
+                <div class="info-head">
+                  <p class="bodytext c1">Küchenleiter: Christian
+                  Altenhöner und Meik del Moral Cabana </p>
+
+                  <p class="bodytext c1">Öffnungszeiten:  11.30 bis
+                  14.30 Uhr</p>
+
+                  <p class="bodytext">Wir sind gespannt auf Ihre
+                  Meinung: <a href=
+                  "https://ssl.netques.de/svy/stwbi/xWiNn11f/"
+                  target="_blank" class=
+                  "external-link-new-window">nutzen Sie unsere
+                  online-Gästebefragung!</a></p>
+
+                  <p class="bodytext">Neu: <a href=
+                  "index.php?id=27" title=
+                  "Opens internal link in current window" class=
+                  "internal-link">Lebensmittelkennzeichnung nach
+                  EU-Verordnung 1169/2014</a></p>
+
+                  <p class="bodytext">Bitte denken Sie daran, Ihre
+                  Uni-Card/FH-Card im Vorfeld an den dafür
+                  vorgesehenen Automaten zu validieren. Des
+                  Weiteren empfehlen wir vor dem Besuch der neuen
+                  Mensa das Aufwerten Ihrer Karte an den
+                  Automaten.</p>
+                </div>
+
+                <div class="navigation clearfix">
+                  <a href=
+                  "index.php?id=61&amp;tx_studentenwerk_pi1%5Bweek%5D=1"
+                  title="» nächste Woche">» nächste Woche</a>
+                  <a href=
+                  "index.php?id=61&amp;tx_studentenwerk_pi1%5Bweek%5D=-1"
+                  title="« vorherige Woche">« vorherige Woche</a>
+                </div>
+
+                <div class="day-block">
+                  <a href=
+                  "index.php?id=61&amp;tx_studentenwerk_pi1%5Bweek%5D=0&amp;tx_studentenwerk_pi1%5Bday%5D=0"
+                  class="day-information">Montag, 2. Februar
+                  2015</a>
+
+                  <table width="100%">
+                    <tr>
+                      <th class="first" width="20%">Tagesmenü</th>
+
+                      <td class="first" width="50%">
+                        Hähnchenbrust mit
+                        Frischkäsetopping<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Farbstoff">Z1</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup>
+                        mit Tomatensoße<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+
+                        <p>Es können 3 Wahlbeilagen gewählt
+                        werden:</p>
+
+                        <p>Schnittlauchkartoffeln vegan, Penne
+                        Rigate, vegan<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>)</sup>,
+                        Pariser Karotten vegan, Kohlrabi in
+                        Sahnesoße<sup>(<a target="_blank" href=
+                        "index.php?id=449#Farbstoff">Z1</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>,
+                        Erdbeerjoghurt<sup>(<a target="_blank"
+                        href="index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>,
+                        Sauerkirsch-Dickmilch<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+                        oder Irish Coffee-Dessert<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price first" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/gefluegel_01.jpg"
+                        alt="mit Geflügel" /></div>
+                      </td>
+
+                      <td class="price first" width="20%">
+                        <p>Studierende: 2,40 €</p>
+
+                        <p>Bedienstete: 3,80 €</p>
+
+                        <p>Gast: 4,50 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Menü
+                      vegetarisch</th>
+
+                      <td class="even" width="50%">
+                        Broccoli-Käseschnitte<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Soja">A25</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup>
+                        mit Kräutersoße<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Farbstoff">Z1</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+
+                        <p>Es können 3 Wahlbeilagen gewählt
+                        werden:</p>
+
+                        <p>Schnittlauchkartoffeln vegan, Penne
+                        Rigate, vegan<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>)</sup>,
+                        Pariser Karotten vegan, Kohlrabi in
+                        Sahnesoße<sup>(<a target="_blank" href=
+                        "index.php?id=449#Farbstoff">Z1</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>,
+                        Erdbeerjoghurt<sup>(<a target="_blank"
+                        href="index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>,
+                        Sauerkirsch-Dickmilch<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+                        oder Irish Coffee-Dessert<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/vegetarisch_01.jpg"
+                        alt="vegetarisch" /></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p>Studierende: 2,40 €</p>
+
+                        <p>Bedienstete: 3,80 €</p>
+
+                        <p>Gast: 4,50 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Mensa vital</th>
+
+                      <td class="" width="50%">
+                        Seelachswürfel mit
+                        Kirschtomaten<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Alkohol">A</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Ei">A22</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Fisch%20und%20Fischerzeugnisse">A23</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Soja">A25</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+                        mit Weißwein-Limonensoße<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Alkohol">A</a>)</sup>
+
+                        <p>Dazu gibt es:</p>
+
+                        <p>Pasta</p>
+
+                        <p>kcal: 716, F: 34g, E: 37g, KH: 54g</p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/fisch_01.jpg"
+                        alt="mit Fisch" /><img src=
+                        "uploads/tx_studentenwerk/alkohol_01.jpg"
+                        alt="alkoholhaltig" /></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p>Studierende: 3,45 €</p>
+
+                        <p>Bedienstete: 4,85 €</p>
+
+                        <p>Gast: 5,55 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Eintopf / Suppe</th>
+
+                      <td class="even" width="50%">
+                        Erbseneintopf<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Soja">A25</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup>
+
+                        <p>Dazu gibt es:</p>
+
+                        <p>gebratenes Soja<sup>(<a target="_blank"
+                        href="index.php?id=449#Soja">A25</a>)</sup>
+                        oder Rauchend<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Konservierungsstoffe">Z2</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Antioxidationsmittel">Z3</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sellerie">A28</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Senf">A30</a>)</sup></p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p>Studierende: 1,80 €</p>
+
+                        <p>Bedienstete: 2,80 €</p>
+
+                        <p>Gast: 3,50 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Eintopf / Suppe</th>
+
+                      <td class="" width="50%">Rinderbrühe mit
+                      Einlage<sup>(<a target="_blank" href=
+                      "index.php?id=449#Gluten">A20</a>,<a target=
+                      "_blank" href=
+                      "index.php?id=449#Ei">A22</a>,<a target=
+                      "_blank" href=
+                      "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>,<a target="_blank"
+                      href=
+                      "index.php?id=449#Sellerie">A28</a>)</sup></td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/rind_01.jpg" alt=
+                        "mit Rind" /></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p class="bodytext">0,80 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Mensa
+                      kulinarisch</th>
+
+                      <td class="even" width="50%">
+                        <p class="bodytext">Heute kein Angebot</p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%"></td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Aktions-Theke</th>
+
+                      <td class="" width="50%">
+                        "Mantaplatte" - Currywurst frisch vom
+                        Grill<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Antioxidationsmittel">Z3</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Phosphat">Z8</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#S%C3%BC%C3%9Fungsmittel">Z9</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Soja">A25</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sellerie">A28</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sesam">A29</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Senf">A30</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Lupinen%20und%20Lupinenprodukte">A32</a>)</sup>
+
+                        <p>Dazu gibt es:</p>
+
+                        <p>Pommes frites und Majonäse</p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/schwein_01.jpg"
+                        alt="mit Schwein" /></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p class="bodytext">3,00 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Aktions-Theke</th>
+
+                      <td class="even" width="50%">
+                        <p class="bodytext">Pommes
+                        frites<sup>(<a target="_blank" href=
+                        "index.php?id=449#Antioxidationsmittel">Z3</a>)</sup>
+                        mit Majonäse<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href="index.php?id=449#Ei">A22</a>)</sup>
+                        oder Ketchup<sup>(<a target="_blank" href=
+                        "index.php?id=449#S%C3%BC%C3%9Fungsmittel">Z9</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup></p>
+
+                        <p class="bodytext c1">auch zum
+                        Mitnehmen!!</p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p class="bodytext">1,20 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Aktions-Theke</th>
+
+                      <td class="" width="50%">
+                        <p>Verschiedene Pastasorten mit Soße,
+                        Toppings nach Wahl</p>
+
+                        <p>Preis pro 100g</p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p>Studierende: 0,75 €</p>
+
+                        <p>Bedienstete: 0,80 €</p>
+
+                        <p>Gast: 0,90 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Salatbuffet</th>
+
+                      <td class="even" width="50%">
+                        <p>Rohkostsalate, Dressings, hausgemachte
+                        Feinkostsalate</p>
+
+                        <p>Preis pro 100g</p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p>Studierende: 0,75 €</p>
+
+                        <p>Bedienstete: 0,80 €</p>
+
+                        <p>Gast: 0,90 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Beilagenbuffet</th>
+
+                      <td class="" width="50%">
+                        <p class="bodytext">Täglich wechselnde
+                        warme Beilagen.</p>
+
+                        <p>Preis pro 100g</p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p>Studierende: 0,75 €</p>
+
+                        <p>Bedienstete: 0,80 €</p>
+
+                        <p>Gast: 0,90 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Dessertbuffet</th>
+
+                      <td class="even" width="50%">
+                        <p>Blätterteigdessert
+                        "Tartufata"<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Ei">A22</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p class="bodytext">1,80 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Dessertbuffet</th>
+
+                      <td class="" width="50%">
+                        <p>
+                        Himbeer-Pfirsich-Schichtdessert<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p class="bodytext">1,50 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Dessertbuffet</th>
+
+                      <td class="even" width="50%">
+                        <p>Hausgemachte Milchshakes<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p class="bodytext">1,20 €</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="day-block">
+                  <a href=
+                  "index.php?id=61&amp;tx_studentenwerk_pi1%5Bweek%5D=0&amp;tx_studentenwerk_pi1%5Bday%5D=1"
+                  class="day-information">Dienstag, 3. Februar
+                  2015</a>
+
+                  <table width="100%">
+                    <tr>
+                      <th class="first" width="20%">Tagesmenü</th>
+
+                      <td class="first" width="50%">
+                        Seelachs im Backteig<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Fisch%20und%20Fischerzeugnisse">A23</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>,<a target="_blank"
+                        href="index.php?id=449#Senf">A30</a>)</sup>
+                        mit Senfsoße<sup>(<a target="_blank" href=
+                        "index.php?id=449#Farbstoff">Z1</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>,<a target="_blank"
+                        href="index.php?id=449#Senf">A30</a>)</sup>
+
+                        <p>Es können 3 Wahlbeilagen gewählt
+                        werden:</p>
+
+                        <p>Salzkartoffeln vegan, Reis vegan,
+                        Kaisergemüse vegan, Prinzessbohnen
+                        vegan<sup>(<a target="_blank" href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup>,
+                        Götterspeise<sup>(<a target="_blank" href=
+                        "index.php?id=449#Farbstoff">Z1</a>)</sup>,
+                        Pfirsich-Dickmilch<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+                        oder Vanillepudding<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price first" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/fisch_01.jpg"
+                        alt="mit Fisch" /></div>
+                      </td>
+
+                      <td class="price first" width="20%">
+                        <p>Studierende: 2,40 €</p>
+
+                        <p>Bedienstete: 3,80 €</p>
+
+                        <p>Gast: 4,50 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Menü
+                      vegetarisch</th>
+
+                      <td class="even" width="50%">
+                        Spätzlepfanne<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Ei">A22</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup>
+                        mit Pilzen und Gemüse
+
+                        <p>Es können 3 Wahlbeilagen gewählt
+                        werden:</p>
+
+                        <p>Salzkartoffeln vegan, Bulgurpfanne
+                        vegan<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>)</sup>,
+                        Kaisergemüse vegan, Prinzessbohnen
+                        vegan<sup>(<a target="_blank" href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup>,
+                        Götterspeise<sup>(<a target="_blank" href=
+                        "index.php?id=449#Farbstoff">Z1</a>)</sup>,
+                        Pfirsich-Dickmilch<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+                        oder Vanillepudding<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/vegetarisch_01.jpg"
+                        alt="vegetarisch" /></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p>Studierende: 2,40 €</p>
+
+                        <p>Bedienstete: 3,80 €</p>
+
+                        <p>Gast: 4,50 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Mensa vital</th>
+
+                      <td class="" width="50%">
+                        Kalbsgeschnetzeltes mit
+                        Kräuterspätzle<sup>(<a target="_blank"
+                        href="index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Ei">A22</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup>
+
+                        <p>kcal: 457, F: 18g, E: 38g, KH:36 g</p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/rind_01.jpg" alt=
+                        "mit Rind" /></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p>Studierende: 3,45 €</p>
+
+                        <p>Bedienstete: 4,85 €</p>
+
+                        <p>Gast: 5,55 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Eintopf / Suppe</th>
+
+                      <td class="even" width="50%">
+                        Bäuerinsuppe<sup>(<a target="_blank" href=
+                        "index.php?id=449#Antioxidationsmittel">Z3</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Soja">A25</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup>
+
+                        <p>Dazu gibt es:</p>
+
+                        <p>gebratenes Soja<sup>(<a target="_blank"
+                        href="index.php?id=449#Soja">A25</a>)</sup>
+                        oder Bockwurst<sup>(<a target="_blank"
+                        href="index.php?id=449#Konservierungsstoffe">Z2</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Antioxidationsmittel">Z3</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Phosphat">Z8</a>)</sup></p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p>Studierende: 1,80 €</p>
+
+                        <p>Bedienstete: 2,80 €</p>
+
+                        <p>Gast: 3,50 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Eintopf / Suppe</th>
+
+                      <td class="" width="50%">Broccolicremesuppe
+                      vegan</td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/icon_nur_vegan_grau.jpg"
+                        alt="nur vegan" /></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p class="bodytext">0,80 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Mensa
+                      kulinarisch</th>
+
+                      <td class="even" width="50%">
+                        <p class="bodytext">Deftiger
+                        Grünkohl<sup>(<a target="_blank" href=
+                        "index.php?id=449#Senf">A30</a>)</sup> mit
+                        Salzkartoffeln, dazu
+                        Kassler<sup>(<a target="_blank" href=
+                        "index.php?id=449#Konservierungsstoffe">Z2</a>,<a target="_blank"
+                        href="index.php?id=449#Soja">A25</a>)</sup>
+                        oder Kohlwurst<sup>(<a target="_blank"
+                        href="index.php?id=449#Konservierungsstoffe">Z2</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Antioxidationsmittel">Z3</a>)</sup></p>
+
+                        <p>Wahlbeilagen sind nicht im Preis
+                        enthalten </p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/schwein_01.jpg"
+                        alt="mit Schwein" /></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p class="bodytext">3,00 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Aktions-Theke</th>
+
+                      <td class="" width="50%">
+                        "Mantaplatte" - Currywurst frisch vom
+                        Grill<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Antioxidationsmittel">Z3</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Phosphat">Z8</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#S%C3%BC%C3%9Fungsmittel">Z9</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Soja">A25</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sellerie">A28</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sesam">A29</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Senf">A30</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Lupinen%20und%20Lupinenprodukte">A32</a>)</sup>
+
+                        <p>Dazu gibt es:</p>
+
+                        <p>Pommes frites und Majonäse</p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/schwein_01.jpg"
+                        alt="mit Schwein" /></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p class="bodytext">3,00 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Aktions-Theke</th>
+
+                      <td class="even" width="50%">
+                        <p class="bodytext">Pommes
+                        frites<sup>(<a target="_blank" href=
+                        "index.php?id=449#Antioxidationsmittel">Z3</a>)</sup>
+                        mit Majonäse<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href="index.php?id=449#Ei">A22</a>)</sup>
+                        oder Ketchup<sup>(<a target="_blank" href=
+                        "index.php?id=449#S%C3%BC%C3%9Fungsmittel">Z9</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup></p>
+
+                        <p class="bodytext c1">auch zum
+                        Mitnehmen!!</p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p class="bodytext">1,20 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Aktions-Theke</th>
+
+                      <td class="" width="50%">
+                        <p>Verschiedene Pastasorten mit Soße,
+                        Toppings nach Wahl</p>
+
+                        <p>Preis pro 100g</p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p>Studierende: 0,75 €</p>
+
+                        <p>Bedienstete: 0,80 €</p>
+
+                        <p>Gast: 0,90 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Salatbuffet</th>
+
+                      <td class="even" width="50%">
+                        <p>Rohkostsalate, Dressings, hausgemachte
+                        Feinkostsalate</p>
+
+                        <p>Preis pro 100g</p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p>Studierende: 0,75 €</p>
+
+                        <p>Bedienstete: 0,80 €</p>
+
+                        <p>Gast: 0,90 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Beilagenbuffet</th>
+
+                      <td class="" width="50%">
+                        <p class="bodytext">Täglich wechselnde
+                        warme Beilagen.</p>
+
+                        <p>Preis pro 100g</p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p>Studierende: 0,75 €</p>
+
+                        <p>Bedienstete: 0,80 €</p>
+
+                        <p>Gast: 0,90 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Dessertbuffet</th>
+
+                      <td class="even" width="50%">Mini
+                      Germknödel<sup>(<a target="_blank" href=
+                      "index.php?id=449#Gluten">A20</a>,<a target=
+                      "_blank" href=
+                      "index.php?id=449#Konservierungsstoffe">Z2</a>,<a target="_blank"
+                      href=
+                      "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+                      mit Kirschfüllung</td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p class="bodytext">1,80 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Dessertbuffet</th>
+
+                      <td class="" width="50%">
+                        <p>Cappuccinocreme<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Soja">A25</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p class="bodytext">1,20 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Dessertbuffet</th>
+
+                      <td class="even" width="50%">
+                        <p>Hausgemachte Milchshakes<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p class="bodytext">1,20 €</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="day-block">
+                  <a href=
+                  "index.php?id=61&amp;tx_studentenwerk_pi1%5Bweek%5D=0&amp;tx_studentenwerk_pi1%5Bday%5D=2"
+                  class="day-information">Mittwoch, 4. Februar
+                  2015</a>
+
+                  <table width="100%">
+                    <tr>
+                      <th class="first" width="20%">Tagesmenü</th>
+
+                      <td class="first" width="50%">
+                        Hackbraten<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Ei">A22</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Sellerie">A28</a>,<a target="_blank"
+                        href="index.php?id=449#Senf">A30</a>)</sup>
+                        mit Bratensoße
+
+                        <p>Es können 3 Wahlbeilagen gewählt
+                        werden:</p>
+
+                        <p>Kartoffelpüree<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>,
+                        Bulgurpfanne vegan<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Gluten">A20</a>)</sup>,
+                        Möhren in Rahm<sup>(<a target="_blank"
+                        href="index.php?id=449#Farbstoff">Z1</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>,
+                        Mandelbroccoli vegan<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Schalenfr%C3%BCchte">A27</a>)</sup>,
+                        Stracciatella-Quark<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Soja">A25</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>,
+                        Erdbeer-Dickmilch<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+                        oder Schwedische Apfelcreme<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Antioxidationsmittel">Z3</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price first" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/schwein_01.jpg"
+                        alt="mit Schwein" /></div>
+                      </td>
+
+                      <td class="price first" width="20%">
+                        <p>Studierende: 2,40 €</p>
+
+                        <p>Bedienstete: 3,80 €</p>
+
+                        <p>Gast: 4,50 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Menü
+                      vegetarisch</th>
+
+                      <td class="even" width="50%">
+                        Falafel<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup>
+                        mit Chili-Minz-Dip<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Konservierungsstoffe">Z2</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Ei">A22</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+
+                        <p>Es können 3 Wahlbeilagen gewählt
+                        werden:</p>
+
+                        <p>Sesamkartoffeln vegan<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Sesam">A29</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Schwefeldioxide%20und%20Sulfite%20(E%20220-228%20)">A31</a>)</sup>,
+                        Bulgurpfanne vegan<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Gluten">A20</a>)</sup>,
+                        Möhren in Rahm<sup>(<a target="_blank"
+                        href="index.php?id=449#Farbstoff">Z1</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>,
+                        Mandelbroccoli vegan<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Schalenfr%C3%BCchte">A27</a>)</sup>,
+                        Stracciatella-Quark<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Soja">A25</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>,
+                        Erdbeer-Dickmilch<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+                        oder Schwedische Apfelcreme<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Antioxidationsmittel">Z3</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/vegetarisch_01.jpg"
+                        alt="vegetarisch" /></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p>Studierende: 2,40 €</p>
+
+                        <p>Bedienstete: 3,80 €</p>
+
+                        <p>Gast: 4,50 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Mensa vital</th>
+
+                      <td class="" width="50%">
+                        Polenta-Bruschetta (enthält Knoblauch) mit
+                        Salat und Joghurt-Dip<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Ei">A22</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+
+                        <p>kcal: 630, F: 21g, E: 23g, KH: 89g</p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/vegetarisch_01.jpg"
+                        alt="vegetarisch" /></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p>Studierende: 2,60 €</p>
+
+                        <p>Bedienstete: 4,00 €</p>
+
+                        <p>Gast: 4,70 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Eintopf / Suppe</th>
+
+                      <td class="even" width="50%">
+                        Mexikanischer Eintopf<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Konservierungsstoffe">Z2</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Ei">A22</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Soja">A25</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup>
+
+                        <p>Dazu gibt es:</p>
+
+                        <p>gebratenes Soja<sup>(<a target="_blank"
+                        href="index.php?id=449#Soja">A25</a>)</sup>
+                        oder gebratenes Rinderhack<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Gluten">A20</a>)</sup></p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p>Studierende: 1,80 €</p>
+
+                        <p>Bedienstete: 2,80 €</p>
+
+                        <p>Gast: 3,50 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Eintopf / Suppe</th>
+
+                      <td class="" width="50%">Blumenkohlcremesuppe
+                      vegan<sup>(<a target="_blank" href=
+                      "index.php?id=449#Gluten">A20</a>,<a target=
+                      "_blank" href=
+                      "index.php?id=449#Antioxidationsmittel">Z3</a>,<a target="_blank"
+                      href=
+                      "index.php?id=449#Soja">A25</a>)</sup></td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/icon_nur_vegan_grau.jpg"
+                        alt="nur vegan" /></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p class="bodytext">0,80 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Mensa
+                      kulinarisch</th>
+
+                      <td class="even" width="50%">
+                        <p class="bodytext">Heute kein Angebot</p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%"></td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Aktions-Theke</th>
+
+                      <td class="" width="50%">
+                        "Mantaplatte" - Currywurst frisch vom
+                        Grill<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Antioxidationsmittel">Z3</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Phosphat">Z8</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#S%C3%BC%C3%9Fungsmittel">Z9</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Soja">A25</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sellerie">A28</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sesam">A29</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Senf">A30</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Lupinen%20und%20Lupinenprodukte">A32</a>)</sup>
+
+                        <p>Dazu gibt es:</p>
+
+                        <p>Pommes frites und Majonäse</p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/schwein_01.jpg"
+                        alt="mit Schwein" /></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p class="bodytext">3,00 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Aktions-Theke</th>
+
+                      <td class="even" width="50%">
+                        <p class="bodytext">Pommes
+                        frites<sup>(<a target="_blank" href=
+                        "index.php?id=449#Antioxidationsmittel">Z3</a>)</sup>
+                        mit Majonäse<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href="index.php?id=449#Ei">A22</a>)</sup>
+                        oder Ketchup<sup>(<a target="_blank" href=
+                        "index.php?id=449#S%C3%BC%C3%9Fungsmittel">Z9</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup></p>
+
+                        <p class="bodytext c1">auch zum
+                        Mitnehmen!!</p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p class="bodytext">1,20 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Aktions-Theke</th>
+
+                      <td class="" width="50%">
+                        <p>Verschiedene Pastasorten mit Soße</p>
+
+                        <p>Preis pro 100 g</p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p>Studierende: 0,75 €</p>
+
+                        <p>Bedienstete: 0,80 €</p>
+
+                        <p>Gast: 0,90 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Salatbuffet</th>
+
+                      <td class="even" width="50%">
+                        <p>Rohkostsalate, Dressings, hausgemachte
+                        Feinkostsalate</p>
+
+                        <p>Preis pro 100 g</p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p>Studierende: 0,75 €</p>
+
+                        <p>Bedienstete: 0,80 €</p>
+
+                        <p>Gast: 0,90 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Beilagenbuffet</th>
+
+                      <td class="" width="50%">
+                        <p class="bodytext">Täglich wechselnde
+                        warme Beilagen.</p>
+
+                        <p>Preis pro 100 g</p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p>Studierende: 0,75 €</p>
+
+                        <p>Bedienstete: 0,80 €</p>
+
+                        <p>Gast: 0,90 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Dessertbuffet</th>
+
+                      <td class="even" width="50%">Bayrisch
+                      Creme<sup>(<a target="_blank" href=
+                      "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+                      mit Roter Grütze</td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p class="bodytext">1,50 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Dessertbuffet</th>
+
+                      <td class="" width="50%">
+                        <p>Mandel-Bienenstichkuchen<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Ei">A22</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Soja">A25</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p class="bodytext">1,50 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Dessertbuffet</th>
+
+                      <td class="even" width="50%">
+                        <p>Hausgemachte Milchshakes<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p class="bodytext">1,20 €</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="day-block">
+                  <a href=
+                  "index.php?id=61&amp;tx_studentenwerk_pi1%5Bweek%5D=0&amp;tx_studentenwerk_pi1%5Bday%5D=3"
+                  class="day-information">Donnerstag, 5. Februar
+                  2015</a>
+
+                  <table width="100%">
+                    <tr>
+                      <th class="first" width="20%">Tagesmenü</th>
+
+                      <td class="first" width="50%">
+                        mit Champignonrahmsoße<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Farbstoff">Z1</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+
+                        <p>Es können 3 Wahlbeilagen gewählt
+                        werden:</p>
+
+                        <p>Spätzle<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href="index.php?id=449#Ei">A22</a>)</sup>,
+                        Bulgurpfanne vegan<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Gluten">A20</a>)</sup>,
+                        Blumenkohl vegan, Balkangemüse
+                        vegan<sup>(<a target="_blank" href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup>,
+                        Schokoladenpudding vegan<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Soja">A25</a>)</sup>,
+                        Müsli-Joghurt<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+                        oder Zitronenquark<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price first" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/schwein_01.jpg"
+                        alt="mit Schwein" /></div>
+                      </td>
+
+                      <td class="price first" width="20%">
+                        <p>Studierende: 2,40 €</p>
+
+                        <p>Bedienstete: 3,80 €</p>
+
+                        <p>Gast: 4,50 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Menü
+                      vegetarisch</th>
+
+                      <td class="even" width="50%">
+                        Indisches
+                        Sojageschnetzeltes<sup>(<a target="_blank"
+                        href="index.php?id=449#vegan">V</a>)</sup>
+
+                        <p>Es können 3 Wahlbeilagen gewählt
+                        werden:</p>
+
+                        <p>Paprikareis vegan, Bulgurpfanne
+                        vegan<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>)</sup>,
+                        Blumenkohl vegan, Balkangemüse
+                        vegan<sup>(<a target="_blank" href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup>,
+                        Wokgemüse vegan<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#S%C3%BC%C3%9Fungsmittel">Z9</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Soja">A25</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup>,
+                        Schokoladenpudding vegan<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Soja">A25</a>)</sup>,
+                        Müsli-Joghurt<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+                        oder Zitronenquark<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/vegetarisch_01.jpg"
+                        alt="vegetarisch" /></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p>Studierende: 2,40 €</p>
+
+                        <p>Bedienstete: 3,80 €</p>
+
+                        <p>Gast: 4,50 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Mensa vital</th>
+
+                      <td class="" width="50%">
+                        Pochiertes Lachsfilet mit
+                        Karotten-Fenchelgemüse und
+                        Petersilienkartoffeln<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Fisch%20und%20Fischerzeugnisse">A23</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+
+                        <p>kcal: 665, F: 12g, E: 47g, KH: 86g</p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/fisch_01.jpg"
+                        alt="mit Fisch" /></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p>Studierende: 3,45 €</p>
+
+                        <p>Bedienstete: 4,85 €</p>
+
+                        <p>Gast: 5,55 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Eintopf / Suppe</th>
+
+                      <td class="even" width="50%">
+                        Russischer Borschtsch (ohne saure
+                        Sahne)<sup>(<a target="_blank" href=
+                        "index.php?id=449#S%C3%BC%C3%9Fungsmittel">Z9</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+
+                        <p>Dazu gibt es:</p>
+
+                        <p>gebratenes Soja<sup>(<a target="_blank"
+                        href="index.php?id=449#Soja">A25</a>)</sup>
+                        oder Krakauer Wurst<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Farbstoff">Z1</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Konservierungsstoffe">Z2</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Antioxidationsmittel">Z3</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Phosphat">Z8</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sellerie">A28</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Senf">A30</a>)</sup></p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p>Studierende: 1,80 €</p>
+
+                        <p>Bedienstete: 2,80 €</p>
+
+                        <p>Gast: 3,50 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Eintopf / Suppe</th>
+
+                      <td class="" width="50%">
+                      Süßkartoffel-Kokossuppe vegan<sup>(<a target=
+                      "_blank" href=
+                      "index.php?id=449#Konservierungsstoffe">Z2</a>,<a target="_blank"
+                      href=
+                      "index.php?id=449#Antioxidationsmittel">Z3</a>,<a target="_blank"
+                      href=
+                      "index.php?id=449#Soja">A25</a>)</sup></td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/icon_nur_vegan_grau.jpg"
+                        alt="nur vegan" /></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p class="bodytext">0,80 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Mensa
+                      kulinarisch</th>
+
+                      <td class="even" width="50%">
+                        <p class="bodytext">Hausgemachter
+                        Sauerbraten<sup>(<a target="_blank" href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup>
+                        mit Apfelrotkohl<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Antioxidationsmittel">Z3</a>)</sup>
+                        und Kartoffelklßen<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Antioxidationsmittel">Z3</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup></p>
+
+                        <p>Wahlbeilagen sind nicht im Preis
+                        enthalten </p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/rind_01.jpg" alt=
+                        "mit Rind" /></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p class="bodytext">4,50 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Aktions-Theke</th>
+
+                      <td class="" width="50%">
+                        "Mantaplatte" - Currywurst frisch vom
+                        Grill<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Antioxidationsmittel">Z3</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Phosphat">Z8</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#S%C3%BC%C3%9Fungsmittel">Z9</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Soja">A25</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sellerie">A28</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sesam">A29</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Senf">A30</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Lupinen%20und%20Lupinenprodukte">A32</a>)</sup>
+
+                        <p>Dazu gibt es:</p>
+
+                        <p>Pommes frites und Majonäse</p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/schwein_01.jpg"
+                        alt="mit Schwein" /></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p class="bodytext">3,00 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Aktions-Theke</th>
+
+                      <td class="even" width="50%">
+                        <p class="bodytext">Pommes
+                        frites<sup>(<a target="_blank" href=
+                        "index.php?id=449#Antioxidationsmittel">Z3</a>)</sup>
+                        mit Majonäse<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href="index.php?id=449#Ei">A22</a>)</sup>
+                        oder Ketchup<sup>(<a target="_blank" href=
+                        "index.php?id=449#S%C3%BC%C3%9Fungsmittel">Z9</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup></p>
+
+                        <p class="bodytext c1">auch zum
+                        Mitnehmen!!</p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p class="bodytext">1,20 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Aktions-Theke</th>
+
+                      <td class="" width="50%">
+                        <p>Verschiedene Pastasorten mit Soße,
+                        Toppings nach Wahl</p>
+
+                        <p>Preis pro 100 g</p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p>Studierende: 0,75 €</p>
+
+                        <p>Bedienstete: 0,80 €</p>
+
+                        <p>Gast: 0,90 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Salatbuffet</th>
+
+                      <td class="even" width="50%">
+                        <p>Rohkostsalate, Dressings, hausgemachte
+                        Feinkostsalate</p>
+
+                        <p>Preis pro 100 g</p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p>Studierende: 0,75 €</p>
+
+                        <p>Bedienstete: 0,80 €</p>
+
+                        <p>Gast: 0,90 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Beilagenbuffet</th>
+
+                      <td class="" width="50%">
+                        <p class="bodytext">Täglich wechselnde
+                        warme Beilagen.</p>
+
+                        <p>Preis pro 100 g</p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p>Studierende: 0,75 €</p>
+
+                        <p>Bedienstete: 0,80 €</p>
+
+                        <p>Gast: 0,90 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Dessertbuffet</th>
+
+                      <td class="even" width="50%">Apple
+                      Crumble<sup>(<a target="_blank" href=
+                      "index.php?id=449#Farbstoff">Z1</a>,<a target="_blank"
+                      href=
+                      "index.php?id=449#Gluten">A20</a>,<a target=
+                      "_blank" href=
+                      "index.php?id=449#Soja">A25</a>,<a target=
+                      "_blank" href=
+                      "index.php?id=449#Schalenfr%C3%BCchte">A27</a>)</sup>
+                      mit Vanillesoße<sup>(<a target="_blank" href=
+                      "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p class="bodytext">1,80 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Dessertbuffet</th>
+
+                      <td class="" width="50%">
+                        <p>Tiramisu<sup>(<a target="_blank" href=
+                        "index.php?id=449#Farbstoff">Z1</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Ei">A22</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p class="bodytext">1,50 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Dessertbuffet</th>
+
+                      <td class="even" width="50%">
+                        <p>Hausgemachte Milchshakes<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p class="bodytext">1,20 €</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="day-block">
+                  <a href=
+                  "index.php?id=61&amp;tx_studentenwerk_pi1%5Bweek%5D=0&amp;tx_studentenwerk_pi1%5Bday%5D=4"
+                  class="day-information">Freitag, 6. Februar
+                  2015</a>
+
+                  <table width="100%">
+                    <tr>
+                      <th class="first" width="20%">Tagesmenü</th>
+
+                      <td class="first" width="50%">
+                        Köfte vom Rind<sup>(<a target="_blank"
+                        href="index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Ei">A22</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+                        mit Ajvar(Mus aus Paprika und Auberginen)
+
+                        <p>Es können 3 Wahlbeilagen gewählt
+                        werden:</p>
+
+                        <p>Thymiankartoffeln, Couscous
+                        vegan<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>)</sup>,
+                        Zucchini-Tomatengemüse vegan, Leipziger
+                        Allerlei vegan<sup>(<a target="_blank"
+                        href="index.php?id=449#Sellerie">A28</a>)</sup>,
+                        Ananasquark<sup>(<a target="_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+                        oder Himbeerjoghurt<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price first" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/rind_01.jpg" alt=
+                        "mit Rind" /></div>
+                      </td>
+
+                      <td class="price first" width="20%">
+                        <p>Studierende: 2,40 €</p>
+
+                        <p>Bedienstete: 3,80 €</p>
+
+                        <p>Gast: 4,50 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Menü
+                      vegetarisch</th>
+
+                      <td class="even" width="50%">
+                        Spinat-Knuspermedaillon<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Ei">A22</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup>
+                        mit Paprikasoße<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Farbstoff">Z1</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+
+                        <p>Es können 3 Wahlbeilagen gewählt
+                        werden:</p>
+
+                        <p>Thymiankartoffeln, Couscous
+                        vegan<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>)</sup>,
+                        Zucchini-Tomatengemüse vegan, Leipziger
+                        Allerlei vegan<sup>(<a target="_blank"
+                        href="index.php?id=449#Sellerie">A28</a>)</sup>,
+                        Ananasquark<sup>(<a target="_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+                        oder Himbeerjoghurt<sup>(<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/vegetarisch_01.jpg"
+                        alt="vegetarisch" /></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p>Studierende: 2,40 €</p>
+
+                        <p>Bedienstete: 3,80 €</p>
+
+                        <p>Gast: 4,50 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Mensa vital</th>
+
+                      <td class="" width="50%">
+                        Schweinegeschnetzeltes mit Balsamicobohnen
+                        und Reis<sup>(<a target="_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>,<a target="_blank"
+                        href="index.php?id=449#Senf">A30</a>)</sup>
+
+                        <p>kcal: 953, F: 57g, E: 33g, KH: 77g</p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/schwein_01.jpg"
+                        alt="mit Schwein" /></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p>Studierende: 3,45 €</p>
+
+                        <p>Bedienstete: 4,85 €</p>
+
+                        <p>Gast: 5,55 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Eintopf / Suppe</th>
+
+                      <td class="even" width="50%">
+                        Eintopf aus Tomaten, Champignons und
+                        Kartoffeln<sup>(<a target="_blank" href=
+                        "index.php?id=449#Farbstoff">Z1</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Soja">A25</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+
+                        <p>Dazu gibt es:</p>
+
+                        <p>gebratenes Soja<sup>(<a target="_blank"
+                        href="index.php?id=449#Soja">A25</a>)</sup>
+                        oder gebratenes Schweinefleisch</p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p>Studierende: 1,80 €</p>
+
+                        <p>Bedienstete: 2,80 €</p>
+
+                        <p>Gast: 3,50 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Eintopf / Suppe</th>
+
+                      <td class="" width="50%"></td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/icon_nur_vegan_grau.jpg"
+                        alt="nur vegan" /></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p class="bodytext">0,80 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Mensa
+                      kulinarisch</th>
+
+                      <td class="even" width="50%">
+                        <p class="bodytext">Heute kein Angebot</p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%"></td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Aktions-Theke</th>
+
+                      <td class="" width="50%">
+                        "Mantaplatte" - Currywurst frisch vom
+                        Grill<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Antioxidationsmittel">Z3</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Phosphat">Z8</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#S%C3%BC%C3%9Fungsmittel">Z9</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Soja">A25</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sellerie">A28</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sesam">A29</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Senf">A30</a>,<a target=
+                        "_blank" href=
+                        "index.php?id=449#Lupinen%20und%20Lupinenprodukte">A32</a>)</sup>
+
+                        <p>Dazu gibt es:</p>
+
+                        <p>Pommes frites und Majonäse</p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"><img src=
+                        "uploads/tx_studentenwerk/schwein_01.jpg"
+                        alt="mit Schwein" /></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p class="bodytext">3,00 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Aktions-Theke</th>
+
+                      <td class="even" width="50%">
+                        <p class="bodytext">Pommes
+                        frites<sup>(<a target="_blank" href=
+                        "index.php?id=449#Antioxidationsmittel">Z3</a>)</sup>
+                        mit Majonäse<sup>(<a target="_blank" href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href="index.php?id=449#Ei">A22</a>)</sup>
+                        oder Ketchup<sup>(<a target="_blank" href=
+                        "index.php?id=449#S%C3%BC%C3%9Fungsmittel">Z9</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>,<a target="_blank"
+                        href=
+                        "index.php?id=449#Sellerie">A28</a>)</sup></p>
+
+                        <p class="bodytext c1">auch zum
+                        Mitnehmen!!</p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p class="bodytext">1,20 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Aktions-Theke</th>
+
+                      <td class="" width="50%">
+                        <p>Verschiedene Pastasorten mit Soße,
+                        Toppings nach Wahl</p>
+
+                        <p>Preis pro 100 g</p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p>Studierende: 0,75 €</p>
+
+                        <p>Bedienstete: 0,80 €</p>
+
+                        <p>Gast: 0,90 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Salatbuffet</th>
+
+                      <td class="even" width="50%">
+                        <p>Rohkostsalate, Dressings, hausgemachte
+                        Feinkostsalate</p>
+
+                        <p>Preis pro 100 g</p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p>Studierende: 0,75 €</p>
+
+                        <p>Bedienstete: 0,80 €</p>
+
+                        <p>Gast: 0,90 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Beilagenbuffet</th>
+
+                      <td class="" width="50%">
+                        <p class="bodytext">Täglich wechselnde
+                        warme Beilagen.</p>
+
+                        <p>Preis pro 100 g</p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p>Studierende: 0,75 €</p>
+
+                        <p>Bedienstete: 0,80 €</p>
+
+                        <p>Gast: 0,90 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Dessertbuffet</th>
+
+                      <td class="even" width="50%">
+                      Apfelpfannkuchen<sup>(<a target="_blank"
+                      href="index.php?id=449#Gluten">A20</a>,<a target="_blank"
+                      href="index.php?id=449#Ei">A22</a>,<a target=
+                      "_blank" href=
+                      "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup>
+                      mit weisser Schokosoße<sup>(<a target=
+                      "_blank" href=
+                      "index.php?id=449#Soja">A25</a>,<a target=
+                      "_blank" href=
+                      "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p class="bodytext">1,80 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Dessertbuffet</th>
+
+                      <td class="" width="50%">
+                        <p>Mousse au Chocolat<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price" width="20%">
+                        <p class="bodytext">1,20 €</p>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <th class="" width="20%">Dessertbuffet</th>
+
+                      <td class="even" width="50%">
+                        <p>Hausgemachte Milchshakes<sup>(<a target=
+                        "_blank" href=
+                        "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">A26</a>)</sup></p>
+                      </td>
+
+                      <td class="price even" width="10%">
+                        <div class="characteristics"></div>
+                      </td>
+
+                      <td class="price even" width="20%">
+                        <p class="bodytext">1,20 €</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="navigation-footer clearfix">
+                  <a href=
+                  "index.php?id=61&amp;tx_studentenwerk_pi1%5Bweek%5D=1"
+                  title="» nächste Woche">» nächste Woche</a>
+                  <a href=
+                  "index.php?id=61&amp;tx_studentenwerk_pi1%5Bweek%5D=-1"
+                  title="« vorherige Woche">« vorherige Woche</a>
+                </div>
+
+                <p class="small"><strong>Zusatzstoffe:</strong>
+                <a target="_blank" href=
+                "index.php?id=449#Alkohol"><sup>(A)</sup>
+                Alkohol</a>, <a target="_blank" href=
+                "index.php?id=449#Farbstoff"><sup>(Z1)</sup>
+                Farbstoff</a>, <a target="_blank" href=
+                "index.php?id=449#Konservierungsstoffe"><sup>(Z2)</sup>
+                Konservierungsstoffe</a>, <a target="_blank" href=
+                "index.php?id=449#Antioxidationsmittel"><sup>(Z3)</sup>
+                Antioxidationsmittel</a>, <a target="_blank" href=
+                "index.php?id=449#Phosphat"><sup>(Z8)</sup>
+                Phosphat</a>, <a target="_blank" href=
+                "index.php?id=449#S%C3%BC%C3%9Fungsmittel"><sup>(Z9)</sup>
+                Süßungsmittel</a></p>
+
+                <p class="small"><strong>Allergene:</strong>
+                <a target="_blank" href=
+                "index.php?id=449#Gluten"><sup>(A20)</sup>
+                Gluten</a>, <a target="_blank" href=
+                "index.php?id=449#Ei"><sup>(A22)</sup> Ei</a>,
+                <a target="_blank" href=
+                "index.php?id=449#Fisch%20und%20Fischerzeugnisse"><sup>
+                (A23)</sup> Fisch und Fischerzeugnisse</a>,
+                <a target="_blank" href=
+                "index.php?id=449#Soja"><sup>(A25)</sup> Soja</a>,
+                <a target="_blank" href=
+                "index.php?id=449#Milch,%20Milchprodukte%20und%20Lactose">
+                <sup>(A26)</sup> Milch, Milchprodukte und
+                Lactose</a>, <a target="_blank" href=
+                "index.php?id=449#Schalenfr%C3%BCchte"><sup>(A27)</sup>
+                Schalenfrüchte</a>, <a target="_blank" href=
+                "index.php?id=449#Sellerie"><sup>(A28)</sup>
+                Sellerie</a>, <a target="_blank" href=
+                "index.php?id=449#Sesam"><sup>(A29)</sup>
+                Sesam</a>, <a target="_blank" href=
+                "index.php?id=449#Senf"><sup>(A30)</sup> Senf</a>,
+                <a target="_blank" href=
+                "index.php?id=449#Schwefeldioxide%20und%20Sulfite%20(E%20220-228%20)">
+                <sup>(A31)</sup> Schwefeldioxide und Sulfite (E
+                220-228 )</a>, <a target="_blank" href=
+                "index.php?id=449#Lupinen%20und%20Lupinenprodukte"><sup>
+                (A32)</sup> Lupinen und Lupinenprodukte</a>,
+                <a target="_blank" href=
+                "index.php?id=449#vegan"><sup>(V)</sup>
+                vegan</a></p>
+
+                <p class="small">Änderungen vorbehalten.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+         
+      </div>
+    </div>
+  </div>
+</body>
+</html>

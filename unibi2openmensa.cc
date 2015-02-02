@@ -177,6 +177,18 @@ static bool has_prices(const Node *cat)
   return false;
 }
 
+static bool has_name(const Node *cat)
+{
+  auto ts = cat->find("./xhtml:td[1]//text()", namespaces);
+  for (auto t : ts) {
+    string s(t->eval_to_string("normalize-space(.)"));
+    if (!s.empty()) {
+      return true;
+    }
+  }
+  return false;
+}
+
 static void gen_meal(const Node *cat, ostream &o)
 {
   o << "        <meal>\n";
@@ -190,6 +202,8 @@ static void gen_meal(const Node *cat, ostream &o)
 static void gen_cat(const Node *cat, string &last_cat_name, ostream &o)
 {
   if (!has_prices(cat))
+    return;
+  if (!has_name(cat))
     return;
   string cname(cat_name(cat));
   if (cname != last_cat_name) {
