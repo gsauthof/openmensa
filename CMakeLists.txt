@@ -47,6 +47,7 @@ set(FHRUS_TESTS
   fhrus_20150112
   fhrus_20150119
   fhrus_holiday
+  fhrus_attr_var
   wiesbaden_accent_20150127
   fra_pi_20150127
   fra_casino_20150127
