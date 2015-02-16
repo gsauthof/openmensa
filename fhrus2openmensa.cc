@@ -97,25 +97,6 @@ static string normalize_price(const string &s)
   }
 }
 
-static NodeSet names(const Node *node)
-{
-  auto r = node->find("./xhtml:tr/xhtml:td/xhtml:div/xhtml:strong/text()",
-      namespaces);
-  return std::move(r);
-}
-static NodeSet notes(const Node *node)
-{
-  auto r = node->find("./xhtml:tr/xhtml:td/xhtml:div/xhtml:p/text()",
-      namespaces);
-  return std::move(r);
-}
-static NodeSet prices(const Node *node)
-{
-  auto r = node->find("./xhtml:tr/xhtml:td/xhtml:p[@class='price']/xhtml:strong/text()",
-      namespaces);
-  return std::move(r);
-}
-
 static mp::cpp_dec_float_50 guest_price(const string &s)
 {
   mp::cpp_dec_float_50 r(s);
@@ -123,33 +104,57 @@ static mp::cpp_dec_float_50 guest_price(const string &s)
   return r + x;
 }
 
+static void gen_name(const Node *menue, ostream &o)
+{
+  auto names = menue->find("./xhtml:td/xhtml:div/xhtml:strong/text()",
+      namespaces);
+  if (names.empty())
+    return;
+  ContentNode *name = dynamic_cast<ContentNode*>(names.front());
+  o << "          <name>" << normalize(name->get_content()) << "</name>\n";
+}
+
+static void gen_note(const Node *menue, ostream &o)
+{
+  auto notes = menue->find("./xhtml:td/xhtml:div/xhtml:p/text()",
+      namespaces);
+  if (notes.empty())
+    return;
+  ContentNode *note = dynamic_cast<ContentNode*>(notes.front());
+  o << "          <note>" << normalize(note->get_content()) << "</note>\n";
+}
+
+static void gen_price(const Node *menue, ostream &o)
+{
+  auto prices = menue->find("./xhtml:td/xhtml:p[@class='price']"
+      "/xhtml:strong/text()", namespaces);
+  if (prices.empty())
+    return;
+  ContentNode *price = dynamic_cast<ContentNode*>(prices.front());
+  string charge(std::move(normalize_price(price->get_content())));
+  o << "          <price role='student'>" << charge << "</price>\n";
+  o << "          <price role='employee'>" << guest_price(charge)
+    << "</price>\n";
+  o << "          <price role='other'>" << guest_price(charge)
+    << "</price>\n";
+}
+
 static void gen_dow(const Node *node, ostream &o)
 {
   string d(std::move(date(node)));
   o << "    <day date='" << d << "'>\n";
-  NodeSet n(std::move(names(node)));
-  NodeSet m(std::move(notes(node)));
-  NodeSet p(std::move(prices(node)));
-  auto i = n.begin();
-  auto j = m.begin();
-  auto k = p.begin();
+
   unsigned x = 1;
-  for (; i != n.end() && j != m.end() && k != p.end(); ++i, ++j, ++k, ++x) {
+  auto menues = node->find("./xhtml:tr[@class='menu']", namespaces);
+  for (auto menue : menues) {
     o << "      <category name='Essen " << x << "'>\n";
     o << "        <meal>\n";
-    ContentNode *name = dynamic_cast<ContentNode*>(*i);
-    o << "          <name>" << normalize(name->get_content()) << "</name>\n";
-    ContentNode *note = dynamic_cast<ContentNode*>(*j);
-    o << "          <note>" << normalize(note->get_content()) << "</note>\n";
-    ContentNode *price = dynamic_cast<ContentNode*>(*k);
-    string charge(std::move(normalize_price(price->get_content())));
-    o << "          <price role='student'>" << charge << "</price>\n";
-    o << "          <price role='employee'>" << guest_price(charge)
-      << "</price>\n";
-    o << "          <price role='other'>" << guest_price(charge)
-      << "</price>\n";
+    gen_name(menue, o);
+    gen_note(menue, o);
+    gen_price(menue, o);
     o << "        </meal>\n";
     o << "      </category>\n";
+    ++x;
   }
   o << "    </day>\n";
 }
