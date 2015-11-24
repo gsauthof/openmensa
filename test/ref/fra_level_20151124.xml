@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openmensa version="2.0"
+           xmlns="http://openmensa.org/open-mensa-v2"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
+  <canteen>
+    <day date='2015-11-23'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Mais-Lauchplätzchen</name>
+          <note>mit Paprikasauce und einer Beilage nach Wahl</note>
+          <price role='student'>1.80</price>
+          <price role='employee'>3.4</price>
+          <price role='other'>3.4</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Seelachsfilet mit Spinat und Feta</name>
+          <note>mit Tomatensauce und einer Beilage nach Wahl</note>
+          <price role='student'>5.00</price>
+          <price role='employee'>6.6</price>
+          <price role='other'>6.6</price>
+        </meal>
+      </category>
+      <category name='Essen 3'>
+        <meal>
+          <name>Basic Burger</name>
+          <price role='student'>2.00</price>
+          <price role='employee'>3.6</price>
+          <price role='other'>3.6</price>
+        </meal>
+      </category>
+      <category name='Essen 4'>
+        <meal>
+          <name>Hamburger</name>
+          <price role='student'>4.50</price>
+          <price role='employee'>6.1</price>
+          <price role='other'>6.1</price>
+        </meal>
+      </category>
+      <category name='Essen 5'>
+        <meal>
+          <name>Cheeseburger</name>
+          <price role='student'>4.80</price>
+          <price role='employee'>6.4</price>
+          <price role='other'>6.4</price>
+        </meal>
+      </category>
+      <category name='Essen 6'>
+        <meal>
+          <name>Gemüseburger</name>
+          <price role='student'>3.50</price>
+          <price role='employee'>5.1</price>
+          <price role='other'>5.1</price>
+        </meal>
+      </category>
+      <category name='Essen 7'>
+        <meal>
+          <name>Fischburger</name>
+          <price role='student'>3.50</price>
+          <price role='employee'>5.1</price>
+          <price role='other'>5.1</price>
+        </meal>
+      </category>
+      <category name='Essen 8'>
+        <meal>
+          <name>Doppel-Cheeseburger</name>
+          <price role='student'>7.60</price>
+          <price role='employee'>9.2</price>
+          <price role='other'>9.2</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-11-24'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Kartoffel-Kokosgratin</name>
+          <note>mit einer Beilage nach Wahl</note>
+          <price role='student'>2.00</price>
+          <price role='employee'>3.6</price>
+          <price role='other'>3.6</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Gulaschsuppe</name>
+          <note>mit Kaiserbrötchen (A)</note>
+          <price role='student'>3.40</price>
+          <price role='employee'>5</price>
+          <price role='other'>5</price>
+        </meal>
+      </category>
+      <category name='Essen 3'>
+        <meal>
+          <name>Gemüseschnitzel</name>
+          <note>mit Tomatensauce und einer Beilage nach Wahl</note>
+          <price role='student'>1.60</price>
+          <price role='employee'>3.2</price>
+          <price role='other'>3.2</price>
+        </meal>
+      </category>
+      <category name='Essen 4'>
+        <meal>
+          <name>Gemüsekroketten</name>
+          <note>mit Tomatensauce und einer Beilage nach Wahl</note>
+          <price role='student'>1.60</price>
+          <price role='employee'>3.2</price>
+          <price role='other'>3.2</price>
+        </meal>
+      </category>
+      <category name='Essen 5'>
+        <meal>
+          <name>Basic Burger</name>
+          <price role='student'>2.00</price>
+          <price role='employee'>3.6</price>
+          <price role='other'>3.6</price>
+        </meal>
+      </category>
+      <category name='Essen 6'>
+        <meal>
+          <name>Hamburger</name>
+          <price role='student'>4.50</price>
+          <price role='employee'>6.1</price>
+          <price role='other'>6.1</price>
+        </meal>
+      </category>
+      <category name='Essen 7'>
+        <meal>
+          <name>Cheeseburger</name>
+          <price role='student'>4.80</price>
+          <price role='employee'>6.4</price>
+          <price role='other'>6.4</price>
+        </meal>
+      </category>
+      <category name='Essen 8'>
+        <meal>
+          <name>Gemüseburger</name>
+          <price role='student'>3.50</price>
+          <price role='employee'>5.1</price>
+          <price role='other'>5.1</price>
+        </meal>
+      </category>
+      <category name='Essen 9'>
+        <meal>
+          <name>Fischburger</name>
+          <price role='student'>3.50</price>
+          <price role='employee'>5.1</price>
+          <price role='other'>5.1</price>
+        </meal>
+      </category>
+      <category name='Essen 10'>
+        <meal>
+          <name>Doppel-Cheeseburger</name>
+          <price role='student'>7.60</price>
+          <price role='employee'>9.2</price>
+          <price role='other'>9.2</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-11-25'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Germknödel mit Pflaumenmusfüllung</name>
+          <note>mit Vanillesauce (G) und einer Beilage nach Wahl</note>
+          <price role='student'>2.20</price>
+          <price role='employee'>3.8</price>
+          <price role='other'>3.8</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Fleischkäse</name>
+          <note>mit Zwiebelsauce und zwei Beilagen nach Wahl</note>
+          <price role='student'>3.30</price>
+          <price role='employee'>4.9</price>
+          <price role='other'>4.9</price>
+        </meal>
+      </category>
+      <category name='Essen 3'>
+        <meal>
+          <name>Basic Burger</name>
+          <price role='student'>2.00</price>
+          <price role='employee'>3.6</price>
+          <price role='other'>3.6</price>
+        </meal>
+      </category>
+      <category name='Essen 4'>
+        <meal>
+          <name>Hamburger</name>
+          <price role='student'>4.50</price>
+          <price role='employee'>6.1</price>
+          <price role='other'>6.1</price>
+        </meal>
+      </category>
+      <category name='Essen 5'>
+        <meal>
+          <name>Cheeseburger</name>
+          <price role='student'>4.80</price>
+          <price role='employee'>6.4</price>
+          <price role='other'>6.4</price>
+        </meal>
+      </category>
+      <category name='Essen 6'>
+        <meal>
+          <name>Gemüseburger</name>
+          <price role='student'>3.50</price>
+          <price role='employee'>5.1</price>
+          <price role='other'>5.1</price>
+        </meal>
+      </category>
+      <category name='Essen 7'>
+        <meal>
+          <name>Fischburger</name>
+          <price role='student'>3.50</price>
+          <price role='employee'>5.1</price>
+          <price role='other'>5.1</price>
+        </meal>
+      </category>
+      <category name='Essen 8'>
+        <meal>
+          <name>Doppel-Cheeseburger</name>
+          <price role='student'>7.60</price>
+          <price role='employee'>9.2</price>
+          <price role='other'>9.2</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-11-26'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Spinatgratin</name>
+          <note>mit einer Beilage nach Wahl</note>
+          <price role='student'>2.40</price>
+          <price role='employee'>4</price>
+          <price role='other'>4</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Hähnchencurry</name>
+          <note>mit Basmatireis</note>
+          <price role='student'>2.80</price>
+          <price role='employee'>4.4</price>
+          <price role='other'>4.4</price>
+        </meal>
+      </category>
+      <category name='Essen 3'>
+        <meal>
+          <name>Basic Burger</name>
+          <price role='student'>2.00</price>
+          <price role='employee'>3.6</price>
+          <price role='other'>3.6</price>
+        </meal>
+      </category>
+      <category name='Essen 4'>
+        <meal>
+          <name>Hamburger</name>
+          <price role='student'>4.50</price>
+          <price role='employee'>6.1</price>
+          <price role='other'>6.1</price>
+        </meal>
+      </category>
+      <category name='Essen 5'>
+        <meal>
+          <name>Cheeseburger</name>
+          <price role='student'>4.80</price>
+          <price role='employee'>6.4</price>
+          <price role='other'>6.4</price>
+        </meal>
+      </category>
+      <category name='Essen 6'>
+        <meal>
+          <name>Gemüseburger</name>
+          <price role='student'>3.50</price>
+          <price role='employee'>5.1</price>
+          <price role='other'>5.1</price>
+        </meal>
+      </category>
+      <category name='Essen 7'>
+        <meal>
+          <name>Fischburger</name>
+          <price role='student'>3.50</price>
+          <price role='employee'>5.1</price>
+          <price role='other'>5.1</price>
+        </meal>
+      </category>
+      <category name='Essen 8'>
+        <meal>
+          <name>Doppel-Cheeseburger</name>
+          <price role='student'>7.60</price>
+          <price role='employee'>9.2</price>
+          <price role='other'>9.2</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-11-27'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Linseneintopf mit Sojastreifen</name>
+          <note>mit Kaiserbrötchen (A) und einer Beilage nach Wahl</note>
+          <price role='student'>1.80</price>
+          <price role='employee'>3.4</price>
+          <price role='other'>3.4</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Paniertes Schweineschnitzel</name>
+          <note>mit zwei Beilagen nach Wahl</note>
+          <price role='student'>3.70</price>
+          <price role='employee'>5.3</price>
+          <price role='other'>5.3</price>
+        </meal>
+      </category>
+      <category name='Essen 3'>
+        <meal>
+          <name>Basic Burger</name>
+          <price role='student'>2.00</price>
+          <price role='employee'>3.6</price>
+          <price role='other'>3.6</price>
+        </meal>
+      </category>
+      <category name='Essen 4'>
+        <meal>
+          <name>Hamburger</name>
+          <price role='student'>4.50</price>
+          <price role='employee'>6.1</price>
+          <price role='other'>6.1</price>
+        </meal>
+      </category>
+      <category name='Essen 5'>
+        <meal>
+          <name>Cheeseburger</name>
+          <price role='student'>4.80</price>
+          <price role='employee'>6.4</price>
+          <price role='other'>6.4</price>
+        </meal>
+      </category>
+      <category name='Essen 6'>
+        <meal>
+          <name>Gemüseburger</name>
+          <price role='student'>3.50</price>
+          <price role='employee'>5.1</price>
+          <price role='other'>5.1</price>
+        </meal>
+      </category>
+      <category name='Essen 7'>
+        <meal>
+          <name>Fischburger</name>
+          <price role='student'>3.50</price>
+          <price role='employee'>5.1</price>
+          <price role='other'>5.1</price>
+        </meal>
+      </category>
+      <category name='Essen 8'>
+        <meal>
+          <name>Doppel-Cheeseburger</name>
+          <price role='student'>7.60</price>
+          <price role='employee'>9.2</price>
+          <price role='other'>9.2</price>
+        </meal>
+      </category>
+    </day>
+
+  </canteen>
+</openmensa>

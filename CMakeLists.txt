@@ -44,6 +44,8 @@ enable_testing()
 
 set(FHRUS_TESTS
   fhrus_20151124
+  wi_accent_20151124
+  fra_level_20151124
   )
 
 foreach(TEST ${FHRUS_TESTS})
