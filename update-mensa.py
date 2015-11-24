@@ -7,7 +7,8 @@
 import argparse
 from   os         import chdir
 from   random     import expovariate
-from   subprocess import call, check_call
+from   subprocess import call, check_call, check_output
+import subprocess
 from   time       import sleep
 
 parser = argparse.ArgumentParser(description='Update openmensa feed')
@@ -23,9 +24,13 @@ parser.add_argument('--path',      help='where to look for EXE and xsd',
                     required=True)
 parser.add_argument('--name',      help='used for feed name NAME.xml ...',
                     required=True)
+parser.add_argument('--html2xml',  help='html2xml method',
+                    choices=['tidy', 'lint', 'xmllint'], default='tidy')
 parser.add_argument('--tf',        help='extra tidy flags',
                     action='append', default=[])
 parser.add_argument('--cf',        help='extra curl flags',
+                    action='append', default=[])
+parser.add_argument('--xf',        help='extra xmllint flags',
                     action='append', default=[])
 parser.add_argument('--xsd',       help='open mensa XSD file',
                     default='open-mensa-v2.xsd')
@@ -51,11 +56,15 @@ else:
 chdir(opt.work)
 
 check_call(['curl', '-o', html] + opt.cf + ['--silent', opt.url])
-r =   call(['tidy', '-o', xml ] + opt.tf + ['-bare', '-clean', '-indent',
-                    '--show-warnings', 'no', '--hide-comments', 'yes',
-                    '-numeric', '-q', '-asxml', html])
-if (r != 0 and r != 1):
-  raise Exception('tidy returned: {}'.format(r))
+if opt.html2xml == 'tidy':
+  r =  call(['tidy', '-o', xml ] + opt.tf + ['-bare', '-clean', '-indent',
+                      '--show-warnings', 'no', '--hide-comments', 'yes',
+                      '-numeric', '-q', '-asxml', html])
+  if (r != 0 and r != 1):
+    raise Exception('tidy returned: {}'.format(r))
+else:
+  check_output(['xmllint',  '--html', html, '--format', '--xmlout', '--nonet',
+      '--output', xml] + opt.xf, stderr=subprocess.STDOUT)
 check_call([exe,       xml], stdout=open(feed, 'w'))
 check_call(['xmllint', '-noout', '-schema', xsd, feed],
     stderr=open('xmllint.log', 'w'))

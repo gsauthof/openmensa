@@ -10,13 +10,12 @@ GPLv3+
 
 Example:
 
-    $ curl -o fhrus.html \
-      'http://www.studentenwerkfrankfurt.de/index.php?id=585&no_cache=1&type=98'
-    $ tidy -o fhrus.xml -bare -clean -indent --show-warnings no \
-           --hide-comments yes -numeric \
-           -q -asxml fhrus.html
-    $ ./fhrus2openmensa fhrus.xml > fhrus_feed.xml
-    $ xmllint -noout -schema open-mensa-v2.xsd fhrus_feed.xml
+    $ curl 'http://www.studentenwerkfrankfurt.de/essen-trinken/speiseplaene/mensa-ruesselsheim/' -o fhrus_20151124.html
+    $ xmllint --html fhrus_20151124.html --format --xmlout --nonet \
+        --output ../test/in/fhrus_20151124.xml
+    $ ./fhrus2openmensa --year 2015 ../test/in/fhrus_20151124.xml \
+        > ../test/ref/fhrus_20151124.xml
+    $ xmllint -noout -schema ../open-mensa-v2.xsd ../test/ref/fhrus_20151124.xml
 
 
 Options:
@@ -25,7 +24,6 @@ Options:
 
 )";
 }
-#include "utility.h"
 
 #include <libxml++/libxml++.h>
 #include <boost/date_time/posix_time/posix_time.hpp>
@@ -74,7 +72,7 @@ static const Node::PrefixNsMap namespaces = {
 static string date(const Node *node)
 {
   string s(node->eval_to_string(
-        "./xhtml:tr/xhtml:td/xhtml:strong/text()", namespaces));
+        "normalize-space(string(.//div[@class='panel-heading']))", namespaces));
 
   static const boost::regex re(R"(^[A-Za-z ,]+([0-9]{2})\.([0-9]{2})\.$)");
   boost::smatch m;
@@ -106,32 +104,25 @@ static mp::cpp_dec_float_50 guest_price(const string &s)
 
 static void gen_name(const Node *menue, ostream &o)
 {
-  auto names = menue->find("./xhtml:td/xhtml:div/xhtml:strong/text()",
-      namespaces);
-  if (names.empty())
-    return;
-  ContentNode *name = dynamic_cast<ContentNode*>(names.front());
-  o << "          <name>" << normalize(name->get_content()) << "</name>\n";
+  string s(menue->eval_to_string("normalize-space(string(./td[1]//strong))",
+      namespaces));
+  o << "          <name>" << s << "</name>\n";
 }
 
 static void gen_note(const Node *menue, ostream &o)
 {
-  auto notes = menue->find("./xhtml:td/xhtml:div/xhtml:p/text()",
-      namespaces);
-  if (notes.empty())
+  string s(menue->eval_to_string("normalize-space(string(./td[1]//p))",
+      namespaces));
+  if (s.empty())
     return;
-  ContentNode *note = dynamic_cast<ContentNode*>(notes.front());
-  o << "          <note>" << normalize(note->get_content()) << "</note>\n";
+  o << "          <note>" << s << "</note>\n";
 }
 
 static void gen_price(const Node *menue, ostream &o)
 {
-  auto prices = menue->find("./xhtml:td/xhtml:p[@class='price']"
-      "/xhtml:strong/text()", namespaces);
-  if (prices.empty())
-    return;
-  ContentNode *price = dynamic_cast<ContentNode*>(prices.front());
-  string charge(std::move(normalize_price(price->get_content())));
+  string charge(normalize_price(menue->eval_to_string(
+          "normalize-space(string(./td[2]))",
+      namespaces)));
   o << "          <price role='student'>" << charge << "</price>\n";
   o << "          <price role='employee'>" << guest_price(charge)
     << "</price>\n";
@@ -141,11 +132,11 @@ static void gen_price(const Node *menue, ostream &o)
 
 static void gen_dow(const Node *node, ostream &o)
 {
-  string d(std::move(date(node)));
+  string d(date(node));
   o << "    <day date='" << d << "'>\n";
 
   unsigned x = 1;
-  auto menues = node->find("./xhtml:tr[@class='menu']", namespaces);
+  auto menues = node->find(".//div[@class='panel-body']//tr", namespaces);
   for (auto menue : menues) {
     o << "      <category name='Essen " << x << "'>\n";
     o << "        <meal>\n";
@@ -168,7 +159,7 @@ static void generate_openmensa(const Node *root, ostream &o)
            xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
   <canteen>
 )";
-  auto days = root->find("//xhtml:div[@class='dates']/xhtml:table",
+  auto days = root->find("//div[@class='panel panel-default']",
       namespaces);
   for (auto day : days)
     gen_dow(day, o);

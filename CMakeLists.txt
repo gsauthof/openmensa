@@ -11,13 +11,12 @@ find_package(Boost 1.53
 
 include(FindPkgConfig)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wno-unused-local-typedefs -std=c++11")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wno-unused-local-typedefs -Wno-deprecated-declarations -std=c++11")
 
 pkg_search_module(LIBXML REQUIRED libxml++-2.6)
 
 add_executable(fhrus2openmensa
   fhrus2openmensa.cc
-  utility.cc
   )
 set_property(TARGET fhrus2openmensa PROPERTY INCLUDE_DIRECTORIES
   ${LIBXML_INCLUDE_DIRS}
@@ -44,14 +43,7 @@ target_link_libraries(unibi2openmensa
 enable_testing()
 
 set(FHRUS_TESTS
-  fhrus_20150112
-  fhrus_20150119
-  fhrus_holiday
-  fhrus_attr_var
-  fhrus_20150216  # empty note
-  wiesbaden_accent_20150127
-  fra_pi_20150127
-  fra_casino_20150127
+  fhrus_20151124
   )
 
 foreach(TEST ${FHRUS_TESTS})
