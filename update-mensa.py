@@ -55,7 +55,7 @@ else:
 
 chdir(opt.work)
 
-check_call(['curl', '-o', html] + opt.cf + ['--silent', opt.url])
+check_call(['curl', '-o', html] + opt.cf + ['--fail', '--silent', opt.url])
 if opt.html2xml == 'tidy':
   r =  call(['tidy', '-o', xml ] + opt.tf + ['-bare', '-clean', '-indent',
                       '--show-warnings', 'no', '--hide-comments', 'yes',
