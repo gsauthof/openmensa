@@ -121,7 +121,7 @@ static void gen_note(const Node *menue, ostream &o)
 static void gen_price(const Node *menue, ostream &o)
 {
   string charge(normalize_price(menue->eval_to_string(
-          "normalize-space(string(./td[2]))",
+          "normalize-space(string((./td[2]//p)[1]))",
       namespaces)));
   o << "          <price role='student'>" << charge << "</price>\n";
   o << "          <price role='employee'>" << guest_price(charge)
@@ -136,7 +136,7 @@ static void gen_dow(const Node *node, ostream &o)
   o << "    <day date='" << d << "'>\n";
 
   unsigned x = 1;
-  auto menues = node->find(".//div[@class='panel-body']//tr", namespaces);
+  auto menues = node->find(".//div[@class='panel-body']/*/tr", namespaces);
   for (auto menue : menues) {
     o << "      <category name='Essen " << x << "'>\n";
     o << "        <meal>\n";

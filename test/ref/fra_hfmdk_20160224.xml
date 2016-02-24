@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openmensa version="2.0"
+           xmlns="http://openmensa.org/open-mensa-v2"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
+  <canteen>
+    <day date='2015-02-22'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Sojabolognese</name>
+          <note>und zwei Beilagen nach Wahl</note>
+          <price role='student'>2.50</price>
+          <price role='employee'>4.1</price>
+          <price role='other'>4.1</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Hähnchenbruststreifen mit Rucolasauce</name>
+          <note>und Tomaten-Bandnudeln (A, C)</note>
+          <price role='student'>3.80</price>
+          <price role='employee'>5.4</price>
+          <price role='other'>5.4</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-02-23'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Bifteki</name>
+          <note>mit Diavolosauce (G) und einer Beilage nach Wahl</note>
+          <price role='student'>3.70</price>
+          <price role='employee'>5.3</price>
+          <price role='other'>5.3</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Makkaroni-Tomatenauflauf</name>
+          <price role='student'>2.20</price>
+          <price role='employee'>3.8</price>
+          <price role='other'>3.8</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-02-24'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Broccoli-Nussecke</name>
+          <note>mit Sauce Napoli und einer Beilage nach Wahl</note>
+          <price role='student'>2.00</price>
+          <price role='employee'>3.6</price>
+          <price role='other'>3.6</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Gedünstetes Seelachsfilet</name>
+          <note>mit glasierten Möhren (G, L) und Dillkartoffeln (5)</note>
+          <price role='student'>5.00</price>
+          <price role='employee'>6.6</price>
+          <price role='other'>6.6</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-02-25'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Kesselgulasch</name>
+          <note>und zwei Beilagen nach Wahl</note>
+          <price role='student'>4.20</price>
+          <price role='employee'>5.8</price>
+          <price role='other'>5.8</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Gemüsepaella mit Walnüssen</name>
+          <price role='student'>2.50</price>
+          <price role='employee'>4.1</price>
+          <price role='other'>4.1</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-02-26'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Paniertes Seelachsfilet</name>
+          <note>mit Dillsauce (G) und einer Beilage nach Wahl</note>
+          <price role='student'>3.00</price>
+          <price role='employee'>4.6</price>
+          <price role='other'>4.6</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Schupfnudel-Gemüsepfanne</name>
+          <price role='student'>2.70</price>
+          <price role='employee'>4.3</price>
+          <price role='other'>4.3</price>
+        </meal>
+      </category>
+    </day>
+
+  </canteen>
+</openmensa>
