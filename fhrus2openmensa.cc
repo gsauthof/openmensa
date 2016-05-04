@@ -69,16 +69,35 @@ static const Node::PrefixNsMap namespaces = {
   { "xhtml", "http://www.w3.org/1999/xhtml" }
 };
 
+static string translate_month(const string &s)
+{
+  if (s.size() == 3 && s[2] == '.') {
+    return s.substr(0, 2);
+  } else {
+    static const array<const char *, 12> months = {
+      "Januar", "Februar", "März", "April", "Mai", "Juni",
+      "Juli", "August", "September", "Oktober", "November", "Dezember"
+    };
+    size_t i = 1;
+    for (auto m : months) {
+      if (m == s)
+        return (boost::format("%02u") % i).str();
+      ++i;
+    }
+    throw runtime_error("Unexpected month string: " + s);
+  }
+}
+
 static string date(const Node *node)
 {
   string s(node->eval_to_string(
         "normalize-space(string(.//div[@class='panel-heading']))", namespaces));
 
-  static const boost::regex re(R"(^[A-Za-z ,]+([0-9]{2})\.([0-9]{2})\.$)");
+  static const boost::regex re(R"(^[A-Za-z ,]+([0-9]{2})\. *([0-9]{2}\.|[A-Z][a-z]+)$)");
   boost::smatch m;
   if (boost::regex_match(s, m, re)) {
     return (boost::format("%1%-%2%-%3%") % Today::instance().year()
-        % m[2] % m[1]).str();
+        % translate_month(m[2]) % m[1]).str();
   } else {
     throw runtime_error("Unexpected date string: " + s);
   }

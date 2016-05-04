@@ -44,6 +44,7 @@ enable_testing()
 
 set(FHRUS_TESTS
   fhrus_20151124
+  fhrus_20160504
   wi_accent_20151124
   fra_level_20151124
   fra_hfmdk_20160224
