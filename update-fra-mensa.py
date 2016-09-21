@@ -27,7 +27,7 @@ items = [
 exit_code = 0
 for item in items:
   argv = [ '/usr/local/bin/update-mensa.py',
-           '--url',    'http://www.studentenwerkfrankfurt.de/essen-trinken/speiseplaene/{}/'.format(item[1]),
+           '--url',    'https://www.studentenwerkfrankfurt.de/essen-trinken/speiseplaene/{}/'.format(item[1]),
            '--output', '/srv/mensa/feed',
            '--work'  , home + '/work/openmensa',
            '--exe'   , 'fhrus2openmensa',
