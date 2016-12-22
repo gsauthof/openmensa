@@ -48,6 +48,7 @@ set(FHRUS_TESTS
   wi_accent_20151124
   fra_level_20151124
   fra_hfmdk_20160224
+  fra_pi_20161222
   )
 
 foreach(TEST ${FHRUS_TESTS})

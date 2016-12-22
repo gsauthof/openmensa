@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openmensa version="2.0"
+           xmlns="http://openmensa.org/open-mensa-v2"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
+  <canteen>
+    <day date='2015-12-22'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Oberhessische Kartoffelsuppe</name>
+          <price role='student'>0.90</price>
+          <price role='employee'>2.5</price>
+          <price role='other'>2.5</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Ratatouille-Kartoffelpfanne</name>
+          <note>mit einer Beilage nach Wahl</note>
+          <price role='student'>1.80</price>
+          <price role='employee'>3.4</price>
+          <price role='other'>3.4</price>
+        </meal>
+      </category>
+      <category name='Essen 3'>
+        <meal>
+          <name>Bauernfrikadelle</name>
+          <note>mit Zwiebelsauce und einer Beilage nach Wahl</note>
+          <price role='student'>2.90</price>
+          <price role='employee'>4.5</price>
+          <price role='other'>4.5</price>
+        </meal>
+      </category>
+      <category name='Essen 4'>
+        <meal>
+          <name>Lasagne Bolognese</name>
+          <note>mit einer Beilage nach Wahl</note>
+          <price role='student'>3.90</price>
+          <price role='employee'>5.5</price>
+          <price role='other'>5.5</price>
+        </meal>
+      </category>
+      <category name='Essen 5'>
+        <meal>
+          <name>Kasslersteak</name>
+          <note>mit Zwiebelsauce und zwei Beilagen nach Wahl</note>
+        </meal>
+      </category>
+      <category name='Essen 6'>
+        <meal>
+          <name>Fruchtiges Truthahnragout</name>
+          <note>mit Spätzle (A, C) und einer Beilage nach Wahl</note>
+          <price role='student'>5.10</price>
+          <price role='employee'>6.7</price>
+          <price role='other'>6.7</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-12-23'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Blumenkohl-Currysuppe</name>
+          <price role='student'>0.90</price>
+          <price role='employee'>2.5</price>
+          <price role='other'>2.5</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Bandnudeln Broccoli-Frischkäse</name>
+          <note>mit einer Beilage nach Wahl</note>
+          <price role='student'>2.10</price>
+          <price role='employee'>3.7</price>
+          <price role='other'>3.7</price>
+        </meal>
+      </category>
+      <category name='Essen 3'>
+        <meal>
+          <name>Coq au Vin</name>
+          <note>mit einer Beilage nach Wahl</note>
+          <price role='student'>4.00</price>
+          <price role='employee'>5.6</price>
+          <price role='other'>5.6</price>
+        </meal>
+      </category>
+      <category name='Essen 4'>
+        <meal>
+          <name>Hokifilet mit Meerrettichkruste</name>
+          <note>Lauchgemüse (F, G) Senfkartoffeln (J)</note>
+          <price role='student'>5.10</price>
+          <price role='employee'>6.7</price>
+          <price role='other'>6.7</price>
+        </meal>
+      </category>
+    </day>
+
+  </canteen>
+</openmensa>

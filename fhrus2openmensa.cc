@@ -110,7 +110,7 @@ static string normalize_price(const string &s)
   if (boost::regex_match(s, m, re)) {
     return (boost::format("%1%.%2%") % m[1] % m[2]).str();
   } else {
-    throw runtime_error("Unexpected price string: " + s);
+    throw underflow_error("Unexpected price string: " + s);
   }
 }
 
@@ -161,7 +161,12 @@ static void gen_dow(const Node *node, ostream &o)
     o << "        <meal>\n";
     gen_name(menue, o);
     gen_note(menue, o);
-    gen_price(menue, o);
+    try {
+      gen_price(menue, o);
+    } catch (const underflow_error &) {
+      // the price is optional in the XSD - and often enough it
+      // is only added later, online
+    }
     o << "        </meal>\n";
     o << "      </category>\n";
     ++x;
