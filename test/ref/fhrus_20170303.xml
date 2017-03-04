@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openmensa version="2.0"
+           xmlns="http://openmensa.org/open-mensa-v2"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://openmensa.org/open-mensa-v2 http://openmensa.org/open-mensa-v2.xsd">
+  <canteen>
+    <day date='2015-03-03'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Tschechische Knoblauch-Kartoffelsuppe</name>
+          <price role='student'>0.90</price>
+          <price role='employee'>2.5</price>
+          <price role='other'>2.5</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Spinat mit roten Linsen</name>
+          <note>mit einer Beilage nach Wahl</note>
+          <price role='student'>1.60</price>
+          <price role='employee'>3.2</price>
+          <price role='other'>3.2</price>
+        </meal>
+      </category>
+      <category name='Essen 3'>
+        <meal>
+          <name>Paniertes Schollenfilet</name>
+          <note>mit Remouladensauce (1, 2, 9, A, C, F, G, J) und zwei Beilagen nach Wahl</note>
+          <price role='student'>4.40</price>
+          <price role='employee'>6</price>
+          <price role='other'>6</price>
+        </meal>
+      </category>
+      <category name='Essen 4'>
+        <meal>
+          <name>Matjesfilet</name>
+          <note>mit Sauce nach Hausfrauenart (2, 9, G) und einer Beilage nach Wahl</note>
+          <price role='student'>3.00</price>
+          <price role='employee'>4.6</price>
+          <price role='other'>4.6</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-03-06'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Kohlrabicremesuppe</name>
+          <price role='student'>0.90</price>
+          <price role='employee'>2.5</price>
+          <price role='other'>2.5</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Broccoliauflauf</name>
+          <note>mit einer Beilage nach Wahl</note>
+          <price role='student'>3.00</price>
+          <price role='employee'>4.6</price>
+          <price role='other'>4.6</price>
+        </meal>
+      </category>
+      <category name='Essen 3'>
+        <meal>
+          <name>Oberhessische Kartoffelsuppe</name>
+          <note>mit Wiener Würstchen (2, 3, I) und einem Kaiserbrötchen (A)</note>
+          <price role='student'>1.80</price>
+          <price role='employee'>3.4</price>
+          <price role='other'>3.4</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-03-07'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Spinatcremesuppe</name>
+          <price role='student'>0.90</price>
+          <price role='employee'>2.5</price>
+          <price role='other'>2.5</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Sojageschnetzeltes Indonesische Art</name>
+          <note>mit einer Beilage nach Wahl</note>
+          <price role='student'>2.00</price>
+          <price role='employee'>3.6</price>
+          <price role='other'>3.6</price>
+        </meal>
+      </category>
+      <category name='Essen 3'>
+        <meal>
+          <name>Gefüllte Paprikaschote</name>
+          <note>mit Tomatensauce und zwei Beilagen nach Wahl</note>
+          <price role='student'>3.50</price>
+          <price role='employee'>5.1</price>
+          <price role='other'>5.1</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-03-08'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Ingwer-Karottencremesuppe</name>
+          <price role='student'>0.90</price>
+          <price role='employee'>2.5</price>
+          <price role='other'>2.5</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Germknödel</name>
+          <note>mit Vanillesauce (G) und einer Beilage nach Wahl</note>
+          <price role='student'>2.40</price>
+          <price role='employee'>4</price>
+          <price role='other'>4</price>
+        </meal>
+      </category>
+      <category name='Essen 3'>
+        <meal>
+          <name>Königsberger Klopse</name>
+          <note>mit einer Beilage nach Wahl</note>
+          <price role='student'>3.20</price>
+          <price role='employee'>4.8</price>
+          <price role='other'>4.8</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-03-09'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Tschechische Knoblauch-Kartoffelsuppe</name>
+          <price role='student'>0.90</price>
+          <price role='employee'>2.5</price>
+          <price role='other'>2.5</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Gemüseschnitzel</name>
+          <note>mit Tomatensauce und einer Beilage nach Wahl</note>
+          <price role='student'>1.60</price>
+          <price role='employee'>3.2</price>
+          <price role='other'>3.2</price>
+        </meal>
+      </category>
+      <category name='Essen 3'>
+        <meal>
+          <name>Putengyros</name>
+          <note>mit Tzatziki (G) und einer Beilage nach Wahl</note>
+          <price role='student'>4.20</price>
+          <price role='employee'>5.8</price>
+          <price role='other'>5.8</price>
+        </meal>
+      </category>
+    </day>
+    <day date='2015-03-10'>
+      <category name='Essen 1'>
+        <meal>
+          <name>Tomatencremesuppe</name>
+          <price role='student'>0.90</price>
+          <price role='employee'>2.5</price>
+          <price role='other'>2.5</price>
+        </meal>
+      </category>
+      <category name='Essen 2'>
+        <meal>
+          <name>Gemüsepaella</name>
+          <note>mit Tomatensauce und einer Beilage nach Wahl</note>
+          <price role='student'>1.80</price>
+          <price role='employee'>3.4</price>
+          <price role='other'>3.4</price>
+        </meal>
+      </category>
+      <category name='Essen 3'>
+        <meal>
+          <name>Hokifilet mit Blattspinat</name>
+          <note>mit einer Beilage nach Wahl</note>
+          <price role='student'>3.80</price>
+          <price role='employee'>5.4</price>
+          <price role='other'>5.4</price>
+        </meal>
+      </category>
+    </day>
+
+  </canteen>
+</openmensa>

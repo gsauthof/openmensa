@@ -93,13 +93,13 @@ static string date(const Node *node)
   string s(node->eval_to_string(
         "normalize-space(string(.//div[@class='panel-heading']))", namespaces));
 
-  static const boost::regex re(R"(^[A-Za-z ,]+([0-9]{2})\. *([0-9]{2}\.|[A-Z][a-z]+)$)");
+  static const boost::regex re(R"(^[A-Za-z ,]+([0-9]{2})\. *([^ ]+)$)");
   boost::smatch m;
   if (boost::regex_match(s, m, re)) {
     return (boost::format("%1%-%2%-%3%") % Today::instance().year()
         % translate_month(m[2]) % m[1]).str();
   } else {
-    throw runtime_error("Unexpected date string: " + s);
+    throw runtime_error("Unexpected date string: |" + s + "|");
   }
 }
 
