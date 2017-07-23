@@ -55,6 +55,7 @@ set(FHRUS_TESTS
 foreach(TEST ${FHRUS_TESTS})
   add_test(NAME ${TEST}
     COMMAND python ${CMAKE_SOURCE_DIR}/test/compare.py
+                   --schema ${CMAKE_SOURCE_DIR}/open-mensa-v2.xsd
                    --exe ./fhrus2openmensa
                    --ef=--year --ef=2015
                    --inp ${CMAKE_SOURCE_DIR}/test/in/${TEST}.xml
