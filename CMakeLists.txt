@@ -89,6 +89,7 @@ set(UNIBI_TESTS
 foreach(TEST ${UNIBI_TESTS})
   add_test(NAME ${TEST}
     COMMAND python ${CMAKE_SOURCE_DIR}/test/compare.py --new
+                   --schema ${CMAKE_SOURCE_DIR}/open-mensa-v2.xsd
                    --exe ${CMAKE_SOURCE_DIR}/unibi2openmensa.py
                    --inp ${CMAKE_SOURCE_DIR}/test/in/${TEST}.html
                    --out ${CMAKE_BINARY_DIR}/test/out/${TEST}.xml
