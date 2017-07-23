@@ -63,23 +63,40 @@ foreach(TEST ${FHRUS_TESTS})
   )
 endforeach()
 
+#set(UNIBI_TESTS
+#  unibi_20150119
+#  unibi_20150112
+#  unibi_holiday
+#  unibi_noname
+#  )
+#foreach(TEST ${UNIBI_TESTS})
+#  add_test(NAME ${TEST}
+#    COMMAND python ${CMAKE_SOURCE_DIR}/test/compare.py
+#                   --exe ./unibi2openmensa
+#                   --inp ${CMAKE_SOURCE_DIR}/test/in/${TEST}.xml
+#                   --out ${CMAKE_BINARY_DIR}/test/out/${TEST}.xml
+#                   --ref ${CMAKE_SOURCE_DIR}/test/ref/${TEST}.xml
+#  )
+#endforeach()
+
 set(UNIBI_TESTS
-  unibi_20150119
-  unibi_20150112
-  unibi_holiday
-  unibi_noname
+  unibi_20170723
+  unibi_fh_lamping_20170723
+  unibi_westend_20170723
+  unibi_lemgo_20170723
+  unibi_hoexter_20170723
   )
 foreach(TEST ${UNIBI_TESTS})
   add_test(NAME ${TEST}
-    COMMAND python ${CMAKE_SOURCE_DIR}/test/compare.py
-                   --exe ./unibi2openmensa
-                   --inp ${CMAKE_SOURCE_DIR}/test/in/${TEST}.xml
+    COMMAND python ${CMAKE_SOURCE_DIR}/test/compare.py --new
+                   --exe ${CMAKE_SOURCE_DIR}/unibi2openmensa.py
+                   --inp ${CMAKE_SOURCE_DIR}/test/in/${TEST}.html
                    --out ${CMAKE_BINARY_DIR}/test/out/${TEST}.xml
                    --ref ${CMAKE_SOURCE_DIR}/test/ref/${TEST}.xml
   )
 endforeach()
 
-add_custom_target(check COMMAND ${CMAKE_CTEST_COMMAND}
+add_custom_target(check COMMAND ${CMAKE_CTEST_COMMAND} --output-on-failure
   DEPENDS
   fhrus2openmensa
   unibi2openmensa

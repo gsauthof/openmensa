@@ -1,3 +1,8 @@
+// as of 2017-07-23, only of historic interest because this parser
+// only recognizes an old version of the Studentenwerk site.
+//
+// See unibi2openmensa.py for an up-to-date version.
+
 #include <ostream>
 static void help(const char *progname, std::ostream &o)
 {
