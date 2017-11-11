@@ -8,6 +8,7 @@
       <category name='Essen 1'>
         <meal>
           <name>Tschechische Knoblauch-Kartoffelsuppe</name>
+          <note>vegetarisch</note>
           <price role='student'>0.90</price>
           <price role='employee'>2.5</price>
           <price role='other'>2.5</price>
@@ -17,6 +18,7 @@
         <meal>
           <name>Spinat mit roten Linsen</name>
           <note>mit einer Beilage nach Wahl</note>
+          <note>Vegan</note>
           <price role='student'>1.60</price>
           <price role='employee'>3.2</price>
           <price role='other'>3.2</price>
@@ -26,6 +28,7 @@
         <meal>
           <name>Paniertes Schollenfilet</name>
           <note>mit Remouladensauce (1, 2, 9, A, C, F, G, J) und zwei Beilagen nach Wahl</note>
+          <note>MSC-Fisch</note>
           <price role='student'>4.40</price>
           <price role='employee'>6</price>
           <price role='other'>6</price>
@@ -35,6 +38,7 @@
         <meal>
           <name>Matjesfilet</name>
           <note>mit Sauce nach Hausfrauenart (2, 9, G) und einer Beilage nach Wahl</note>
+          <note>MSC-Fisch</note>
           <price role='student'>3.00</price>
           <price role='employee'>4.6</price>
           <price role='other'>4.6</price>
@@ -45,6 +49,7 @@
       <category name='Essen 1'>
         <meal>
           <name>Kohlrabicremesuppe</name>
+          <note>vegetarisch</note>
           <price role='student'>0.90</price>
           <price role='employee'>2.5</price>
           <price role='other'>2.5</price>
@@ -54,6 +59,7 @@
         <meal>
           <name>Broccoliauflauf</name>
           <note>mit einer Beilage nach Wahl</note>
+          <note>vegetarisch</note>
           <price role='student'>3.00</price>
           <price role='employee'>4.6</price>
           <price role='other'>4.6</price>
@@ -63,6 +69,8 @@
         <meal>
           <name>Oberhessische Kartoffelsuppe</name>
           <note>mit Wiener Würstchen (2, 3, I) und einem Kaiserbrötchen (A)</note>
+          <note>Schwein</note>
+          <note>Rind</note>
           <price role='student'>1.80</price>
           <price role='employee'>3.4</price>
           <price role='other'>3.4</price>
@@ -73,6 +81,8 @@
       <category name='Essen 1'>
         <meal>
           <name>Spinatcremesuppe</name>
+          <note>vegetarisch</note>
+          <note>Alkohol</note>
           <price role='student'>0.90</price>
           <price role='employee'>2.5</price>
           <price role='other'>2.5</price>
@@ -82,6 +92,7 @@
         <meal>
           <name>Sojageschnetzeltes Indonesische Art</name>
           <note>mit einer Beilage nach Wahl</note>
+          <note>Vegan</note>
           <price role='student'>2.00</price>
           <price role='employee'>3.6</price>
           <price role='other'>3.6</price>
@@ -91,6 +102,7 @@
         <meal>
           <name>Gefüllte Paprikaschote</name>
           <note>mit Tomatensauce und zwei Beilagen nach Wahl</note>
+          <note>Geflügel</note>
           <price role='student'>3.50</price>
           <price role='employee'>5.1</price>
           <price role='other'>5.1</price>
@@ -101,6 +113,7 @@
       <category name='Essen 1'>
         <meal>
           <name>Ingwer-Karottencremesuppe</name>
+          <note>vegetarisch</note>
           <price role='student'>0.90</price>
           <price role='employee'>2.5</price>
           <price role='other'>2.5</price>
@@ -110,6 +123,7 @@
         <meal>
           <name>Germknödel</name>
           <note>mit Vanillesauce (G) und einer Beilage nach Wahl</note>
+          <note>vegetarisch</note>
           <price role='student'>2.40</price>
           <price role='employee'>4</price>
           <price role='other'>4</price>
@@ -119,6 +133,8 @@
         <meal>
           <name>Königsberger Klopse</name>
           <note>mit einer Beilage nach Wahl</note>
+          <note>Schwein</note>
+          <note>Rind</note>
           <price role='student'>3.20</price>
           <price role='employee'>4.8</price>
           <price role='other'>4.8</price>
@@ -129,6 +145,7 @@
       <category name='Essen 1'>
         <meal>
           <name>Tschechische Knoblauch-Kartoffelsuppe</name>
+          <note>vegetarisch</note>
           <price role='student'>0.90</price>
           <price role='employee'>2.5</price>
           <price role='other'>2.5</price>
@@ -138,6 +155,7 @@
         <meal>
           <name>Gemüseschnitzel</name>
           <note>mit Tomatensauce und einer Beilage nach Wahl</note>
+          <note>Vegan</note>
           <price role='student'>1.60</price>
           <price role='employee'>3.2</price>
           <price role='other'>3.2</price>
@@ -157,6 +175,7 @@
       <category name='Essen 1'>
         <meal>
           <name>Tomatencremesuppe</name>
+          <note>vegetarisch</note>
           <price role='student'>0.90</price>
           <price role='employee'>2.5</price>
           <price role='other'>2.5</price>
@@ -166,6 +185,7 @@
         <meal>
           <name>Gemüsepaella</name>
           <note>mit Tomatensauce und einer Beilage nach Wahl</note>
+          <note>Vegan</note>
           <price role='student'>1.80</price>
           <price role='employee'>3.4</price>
           <price role='other'>3.4</price>
@@ -175,6 +195,7 @@
         <meal>
           <name>Hokifilet mit Blattspinat</name>
           <note>mit einer Beilage nach Wahl</note>
+          <note>MSC-Fisch</note>
           <price role='student'>3.80</price>
           <price role='employee'>5.4</price>
           <price role='other'>5.4</price>

@@ -9,6 +9,7 @@
         <meal>
           <name>Mais-Lauchplätzchen</name>
           <note>mit Paprikasauce und einer Beilage nach Wahl</note>
+          <note>vegetarisch</note>
           <price role='student'>1.80</price>
           <price role='employee'>3.4</price>
           <price role='other'>3.4</price>
@@ -18,6 +19,7 @@
         <meal>
           <name>Seelachsfilet mit Spinat und Feta</name>
           <note>mit Tomatensauce und einer Beilage nach Wahl</note>
+          <note>MSC-Fisch</note>
           <price role='student'>5.00</price>
           <price role='employee'>6.6</price>
           <price role='other'>6.6</price>
@@ -26,6 +28,7 @@
       <category name='Essen 3'>
         <meal>
           <name>Basic Burger</name>
+          <note>Rind</note>
           <price role='student'>2.00</price>
           <price role='employee'>3.6</price>
           <price role='other'>3.6</price>
@@ -34,6 +37,7 @@
       <category name='Essen 4'>
         <meal>
           <name>Hamburger</name>
+          <note>Rind</note>
           <price role='student'>4.50</price>
           <price role='employee'>6.1</price>
           <price role='other'>6.1</price>
@@ -42,6 +46,7 @@
       <category name='Essen 5'>
         <meal>
           <name>Cheeseburger</name>
+          <note>Rind</note>
           <price role='student'>4.80</price>
           <price role='employee'>6.4</price>
           <price role='other'>6.4</price>
@@ -58,6 +63,7 @@
       <category name='Essen 7'>
         <meal>
           <name>Fischburger</name>
+          <note>MSC-Fisch</note>
           <price role='student'>3.50</price>
           <price role='employee'>5.1</price>
           <price role='other'>5.1</price>
@@ -66,6 +72,7 @@
       <category name='Essen 8'>
         <meal>
           <name>Doppel-Cheeseburger</name>
+          <note>Rind</note>
           <price role='student'>7.60</price>
           <price role='employee'>9.2</price>
           <price role='other'>9.2</price>
@@ -77,6 +84,7 @@
         <meal>
           <name>Kartoffel-Kokosgratin</name>
           <note>mit einer Beilage nach Wahl</note>
+          <note>Vegan</note>
           <price role='student'>2.00</price>
           <price role='employee'>3.6</price>
           <price role='other'>3.6</price>
@@ -86,6 +94,7 @@
         <meal>
           <name>Gulaschsuppe</name>
           <note>mit Kaiserbrötchen (A)</note>
+          <note>Rind</note>
           <price role='student'>3.40</price>
           <price role='employee'>5</price>
           <price role='other'>5</price>
@@ -95,6 +104,7 @@
         <meal>
           <name>Gemüseschnitzel</name>
           <note>mit Tomatensauce und einer Beilage nach Wahl</note>
+          <note>Vegan</note>
           <price role='student'>1.60</price>
           <price role='employee'>3.2</price>
           <price role='other'>3.2</price>
@@ -104,6 +114,7 @@
         <meal>
           <name>Gemüsekroketten</name>
           <note>mit Tomatensauce und einer Beilage nach Wahl</note>
+          <note>Vegan</note>
           <price role='student'>1.60</price>
           <price role='employee'>3.2</price>
           <price role='other'>3.2</price>
@@ -112,6 +123,7 @@
       <category name='Essen 5'>
         <meal>
           <name>Basic Burger</name>
+          <note>Rind</note>
           <price role='student'>2.00</price>
           <price role='employee'>3.6</price>
           <price role='other'>3.6</price>
@@ -120,6 +132,7 @@
       <category name='Essen 6'>
         <meal>
           <name>Hamburger</name>
+          <note>Rind</note>
           <price role='student'>4.50</price>
           <price role='employee'>6.1</price>
           <price role='other'>6.1</price>
@@ -128,6 +141,7 @@
       <category name='Essen 7'>
         <meal>
           <name>Cheeseburger</name>
+          <note>Rind</note>
           <price role='student'>4.80</price>
           <price role='employee'>6.4</price>
           <price role='other'>6.4</price>
@@ -144,6 +158,7 @@
       <category name='Essen 9'>
         <meal>
           <name>Fischburger</name>
+          <note>MSC-Fisch</note>
           <price role='student'>3.50</price>
           <price role='employee'>5.1</price>
           <price role='other'>5.1</price>
@@ -152,6 +167,7 @@
       <category name='Essen 10'>
         <meal>
           <name>Doppel-Cheeseburger</name>
+          <note>Rind</note>
           <price role='student'>7.60</price>
           <price role='employee'>9.2</price>
           <price role='other'>9.2</price>
@@ -163,6 +179,7 @@
         <meal>
           <name>Germknödel mit Pflaumenmusfüllung</name>
           <note>mit Vanillesauce (G) und einer Beilage nach Wahl</note>
+          <note>vegetarisch</note>
           <price role='student'>2.20</price>
           <price role='employee'>3.8</price>
           <price role='other'>3.8</price>
@@ -172,6 +189,7 @@
         <meal>
           <name>Fleischkäse</name>
           <note>mit Zwiebelsauce und zwei Beilagen nach Wahl</note>
+          <note>Schwein</note>
           <price role='student'>3.30</price>
           <price role='employee'>4.9</price>
           <price role='other'>4.9</price>
@@ -180,6 +198,7 @@
       <category name='Essen 3'>
         <meal>
           <name>Basic Burger</name>
+          <note>Rind</note>
           <price role='student'>2.00</price>
           <price role='employee'>3.6</price>
           <price role='other'>3.6</price>
@@ -188,6 +207,7 @@
       <category name='Essen 4'>
         <meal>
           <name>Hamburger</name>
+          <note>Rind</note>
           <price role='student'>4.50</price>
           <price role='employee'>6.1</price>
           <price role='other'>6.1</price>
@@ -196,6 +216,7 @@
       <category name='Essen 5'>
         <meal>
           <name>Cheeseburger</name>
+          <note>Rind</note>
           <price role='student'>4.80</price>
           <price role='employee'>6.4</price>
           <price role='other'>6.4</price>
@@ -212,6 +233,7 @@
       <category name='Essen 7'>
         <meal>
           <name>Fischburger</name>
+          <note>MSC-Fisch</note>
           <price role='student'>3.50</price>
           <price role='employee'>5.1</price>
           <price role='other'>5.1</price>
@@ -220,6 +242,7 @@
       <category name='Essen 8'>
         <meal>
           <name>Doppel-Cheeseburger</name>
+          <note>Rind</note>
           <price role='student'>7.60</price>
           <price role='employee'>9.2</price>
           <price role='other'>9.2</price>
@@ -231,6 +254,7 @@
         <meal>
           <name>Spinatgratin</name>
           <note>mit einer Beilage nach Wahl</note>
+          <note>vegetarisch</note>
           <price role='student'>2.40</price>
           <price role='employee'>4</price>
           <price role='other'>4</price>
@@ -248,6 +272,7 @@
       <category name='Essen 3'>
         <meal>
           <name>Basic Burger</name>
+          <note>Rind</note>
           <price role='student'>2.00</price>
           <price role='employee'>3.6</price>
           <price role='other'>3.6</price>
@@ -256,6 +281,7 @@
       <category name='Essen 4'>
         <meal>
           <name>Hamburger</name>
+          <note>Rind</note>
           <price role='student'>4.50</price>
           <price role='employee'>6.1</price>
           <price role='other'>6.1</price>
@@ -264,6 +290,7 @@
       <category name='Essen 5'>
         <meal>
           <name>Cheeseburger</name>
+          <note>Rind</note>
           <price role='student'>4.80</price>
           <price role='employee'>6.4</price>
           <price role='other'>6.4</price>
@@ -280,6 +307,7 @@
       <category name='Essen 7'>
         <meal>
           <name>Fischburger</name>
+          <note>MSC-Fisch</note>
           <price role='student'>3.50</price>
           <price role='employee'>5.1</price>
           <price role='other'>5.1</price>
@@ -288,6 +316,7 @@
       <category name='Essen 8'>
         <meal>
           <name>Doppel-Cheeseburger</name>
+          <note>Rind</note>
           <price role='student'>7.60</price>
           <price role='employee'>9.2</price>
           <price role='other'>9.2</price>
@@ -299,6 +328,7 @@
         <meal>
           <name>Linseneintopf mit Sojastreifen</name>
           <note>mit Kaiserbrötchen (A) und einer Beilage nach Wahl</note>
+          <note>Vegan</note>
           <price role='student'>1.80</price>
           <price role='employee'>3.4</price>
           <price role='other'>3.4</price>
@@ -316,6 +346,7 @@
       <category name='Essen 3'>
         <meal>
           <name>Basic Burger</name>
+          <note>Rind</note>
           <price role='student'>2.00</price>
           <price role='employee'>3.6</price>
           <price role='other'>3.6</price>
@@ -324,6 +355,7 @@
       <category name='Essen 4'>
         <meal>
           <name>Hamburger</name>
+          <note>Rind</note>
           <price role='student'>4.50</price>
           <price role='employee'>6.1</price>
           <price role='other'>6.1</price>
@@ -332,6 +364,7 @@
       <category name='Essen 5'>
         <meal>
           <name>Cheeseburger</name>
+          <note>Rind</note>
           <price role='student'>4.80</price>
           <price role='employee'>6.4</price>
           <price role='other'>6.4</price>
@@ -348,6 +381,7 @@
       <category name='Essen 7'>
         <meal>
           <name>Fischburger</name>
+          <note>MSC-Fisch</note>
           <price role='student'>3.50</price>
           <price role='employee'>5.1</price>
           <price role='other'>5.1</price>
@@ -356,6 +390,7 @@
       <category name='Essen 8'>
         <meal>
           <name>Doppel-Cheeseburger</name>
+          <note>Rind</note>
           <price role='student'>7.60</price>
           <price role='employee'>9.2</price>
           <price role='other'>9.2</price>

@@ -137,6 +137,16 @@ static void gen_note(const Node *menue, ostream &o)
   o << "          <note>" << s << "</note>\n";
 }
 
+static void gen_tags(const Node *menue, ostream &o)
+{
+  auto tags = menue->find(".//img[@title]", namespaces);
+  for (auto tag : tags) {
+    auto e = dynamic_cast<const xmlpp::Element*>(tag);
+    string s(e->get_attribute_value("title"));
+    o << "          <note>" << s << "</note>\n";
+  }
+}
+
 static void gen_price(const Node *menue, ostream &o)
 {
   string charge(normalize_price(menue->eval_to_string(
@@ -161,6 +171,7 @@ static void gen_dow(const Node *node, ostream &o)
     o << "        <meal>\n";
     gen_name(menue, o);
     gen_note(menue, o);
+    gen_tags(menue, o);
     try {
       gen_price(menue, o);
     } catch (const underflow_error &) {

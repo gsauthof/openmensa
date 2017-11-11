@@ -8,6 +8,7 @@
       <category name='Essen 1'>
         <meal>
           <name>Maissuppe</name>
+          <note>vegetarisch</note>
           <price role='student'>0.90</price>
           <price role='employee'>2.5</price>
           <price role='other'>2.5</price>
@@ -17,6 +18,7 @@
         <meal>
           <name>Nudel-Gemüsegratin</name>
           <note>mit Tomatensauce und einer Beilage nach Wahl</note>
+          <note>vegetarisch</note>
           <price role='student'>1.80</price>
           <price role='employee'>3.4</price>
           <price role='other'>3.4</price>
@@ -26,6 +28,7 @@
         <meal>
           <name>Linseneintopf</name>
           <note>mit Wiener Würstchen (2, 3, I) mit Kaiserbrötchen (A)</note>
+          <note>Schwein</note>
           <price role='student'>2.10</price>
           <price role='employee'>3.7</price>
           <price role='other'>3.7</price>
@@ -35,6 +38,7 @@
         <meal>
           <name>Sojabolognese</name>
           <note>mit zwei Beilagen nach Wahl</note>
+          <note>Vegan</note>
           <price role='student'>2.10</price>
           <price role='employee'>3.7</price>
           <price role='other'>3.7</price>
@@ -53,6 +57,7 @@
         <meal>
           <name>Chili con Carne</name>
           <note>mit Baguette (A) und einer Beilage nach Wahl</note>
+          <note>Rind</note>
           <price role='student'>3.10</price>
           <price role='employee'>4.7</price>
           <price role='other'>4.7</price>
@@ -63,6 +68,7 @@
       <category name='Essen 1'>
         <meal>
           <name>Kohlrabicremesuppe</name>
+          <note>vegetarisch</note>
           <price role='student'>0.90</price>
           <price role='employee'>2.5</price>
           <price role='other'>2.5</price>
@@ -72,6 +78,7 @@
         <meal>
           <name>Gemüsesugo</name>
           <note>mit zwei Beilagen nach Wahl</note>
+          <note>Vegan</note>
           <price role='student'>2.20</price>
           <price role='employee'>3.8</price>
           <price role='other'>3.8</price>
@@ -90,6 +97,7 @@
         <meal>
           <name>Kohlroulade</name>
           <note>mit Specksauce (2) und einer Beilage nach Wahl</note>
+          <note>Schwein</note>
           <price role='student'>1.70</price>
           <price role='employee'>3.3</price>
           <price role='other'>3.3</price>
@@ -118,6 +126,7 @@
       <category name='Essen 1'>
         <meal>
           <name>Oberhessische Kartoffelsuppe</name>
+          <note>vegetarisch</note>
           <price role='student'>0.90</price>
           <price role='employee'>2.5</price>
           <price role='other'>2.5</price>
@@ -127,6 +136,7 @@
         <meal>
           <name>Frühlingsrolle</name>
           <note>mit Curryrahmsauce (G, J) und einer Beilage nach Wahl</note>
+          <note>vegetarisch</note>
           <price role='student'>1.80</price>
           <price role='employee'>3.4</price>
           <price role='other'>3.4</price>
@@ -136,6 +146,8 @@
         <meal>
           <name>Kasslerbraten</name>
           <note>mit Rotweinsauce (L) und einer Beilage nach Wahl</note>
+          <note>Schwein</note>
+          <note>Alkohol</note>
           <price role='student'>3.30</price>
           <price role='employee'>4.9</price>
           <price role='other'>4.9</price>
@@ -153,6 +165,7 @@
       <category name='Essen 5'>
         <meal>
           <name>Pizza Salami</name>
+          <note>Schwein</note>
           <price role='student'>3.70</price>
           <price role='employee'>5.3</price>
           <price role='other'>5.3</price>
@@ -161,6 +174,7 @@
       <category name='Essen 6'>
         <meal>
           <name>Pizza Spinat</name>
+          <note>vegetarisch</note>
           <price role='student'>3.70</price>
           <price role='employee'>5.3</price>
           <price role='other'>5.3</price>
@@ -171,6 +185,7 @@
       <category name='Essen 1'>
         <meal>
           <name>Würzige Tomatensuppe</name>
+          <note>Vegan</note>
           <price role='student'>0.90</price>
           <price role='employee'>2.5</price>
           <price role='other'>2.5</price>
@@ -180,6 +195,7 @@
         <meal>
           <name>Tortellini mit Spinat-Käsefüllung</name>
           <note>mit Sauce Napoli mit Paprika-Tomatensauce</note>
+          <note>vegetarisch</note>
           <price role='student'>1.60</price>
           <price role='employee'>3.2</price>
           <price role='other'>3.2</price>
@@ -189,6 +205,7 @@
         <meal>
           <name>Bratwurst</name>
           <note>mit Bratensauce und zwei Beilagen nach Wahl</note>
+          <note>Schwein</note>
           <price role='student'>3.10</price>
           <price role='employee'>4.7</price>
           <price role='other'>4.7</price>
@@ -198,6 +215,7 @@
         <meal>
           <name>Paniertes Seelachsfilet</name>
           <note>mit Joghurt-Dillsauce (G) und zwei Beilagen nach Wahl</note>
+          <note>MSC-Fisch</note>
           <price role='student'>3.90</price>
           <price role='employee'>5.5</price>
           <price role='other'>5.5</price>
@@ -208,6 +226,7 @@
       <category name='Essen 1'>
         <meal>
           <name>Würzige Tomatensuppe</name>
+          <note>Vegan</note>
           <price role='student'>0.90</price>
           <price role='employee'>2.5</price>
           <price role='other'>2.5</price>
@@ -216,6 +235,7 @@
       <category name='Essen 2'>
         <meal>
           <name>Kohlrabi mit Saurer Sahne und Kartoffeln</name>
+          <note>vegetarisch</note>
           <price role='student'>1.60</price>
           <price role='employee'>3.2</price>
           <price role='other'>3.2</price>
