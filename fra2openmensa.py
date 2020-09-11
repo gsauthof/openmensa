@@ -159,7 +159,7 @@ def run(args):
 
     doc  = html5lib.parse(inp)
     feed = doc2feed(doc)
-    feed.write(args.output)
+    feed.write(args.output, encoding='UTF-8')
 
 
 def main(*a):

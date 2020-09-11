@@ -142,7 +142,7 @@ def run(args):
     inp = get(args.url, args.agent)
   ts = get_tables(inp)
   feed = mk_feed(ts)
-  feed.write(args.output)
+  feed.write(args.output, encoding='UTF-8')
   return 0
 
 def main(*a):
