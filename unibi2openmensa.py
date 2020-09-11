@@ -59,6 +59,8 @@ def parse_date(s):
   x = x.split()[1]
   es = x.split('.')
   es.reverse()
+  if len(es) != 3:
+      return None
   r = '-'.join(es)
   return r
 
@@ -116,7 +118,10 @@ def mk_feed(ts):
   feed = ET.Element(ons + 'openmensa', version='2.0')
   canteen = ET.SubElement(feed, ons+'canteen')
   for h2, table in ts:
-    day = ET.SubElement(canteen, ons+'day', date=parse_date(h2.text))
+    dt = parse_date(h2.text)
+    if dt is None:
+        continue
+    day = ET.SubElement(canteen, ons+'day', date=dt)
     old_c = None
     for tr in table.find(xns+'tbody').iter(xns+'tr'):
       try:
