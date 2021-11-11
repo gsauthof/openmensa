@@ -80,8 +80,10 @@ def parse_name(d):
 
 def parse_note(d):
     for e in d.iterfind(f'./{xns}td//{xns}p'):
+        if e.text is None:
+            continue
         return ' '.join(e.text.split())
-    raise RuntimeError("Couldn't find meal note")
+    return ''
 
 def parse_tags(d):
     return list(e.get('title').strip() for e in d.iterfind(f'.//{xns}img[@title]'))
@@ -128,9 +130,12 @@ def doc2feed(doc):
             name = ET.SubElement(meal, ons+'name')
             name.text = parse_name(meal_e)
             name.tail = '\n          '
-            note = ET.SubElement(meal, ons+'note')
-            note.text = parse_note(meal_e)
-            note.tail = '\n          '
+            note_str = parse_note(meal_e)
+            if note_str:
+                note = ET.SubElement(meal, ons+'note')
+                note.text = note_str
+                print(note.text)
+                note.tail = '\n          '
             for t in parse_tags(meal_e):
                 note = ET.SubElement(meal, ons+'note')
                 note.text = t
