@@ -134,7 +134,6 @@ def doc2feed(doc):
             if note_str:
                 note = ET.SubElement(meal, ons+'note')
                 note.text = note_str
-                print(note.text)
                 note.tail = '\n          '
             for t in parse_tags(meal_e):
                 note = ET.SubElement(meal, ons+'note')
