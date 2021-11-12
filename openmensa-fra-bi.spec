@@ -3,7 +3,7 @@
 
 Name:       openmensa-fra-bi
 Version:    0.6.0
-Release:    2%{?dist}
+Release:    3%{?dist}
 Summary:    Openmensa parsers for Frankfurt/Bielefeld University canteens
 URL:        https://github.com/gsauthof/openmensa
 License:    GPLv3+

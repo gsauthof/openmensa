@@ -66,7 +66,7 @@ def parse_date(d):
         xs = e.text.strip().split()
         if len(xs) != 3:
             break
-        i = months.index(xs[2])
+        i = months.index(xs[2]) + 1
         if i == -1:
             break
         j = int(xs[1].strip('.'))
