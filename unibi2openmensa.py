@@ -37,14 +37,17 @@ def parse_args(*a):
     time.sleep(random.expovariate(1.0/args.wait))
   return args
 
-def get(url, agent):
+def get(url):
+  global agent
+  
   s = requests.Session()
   s.headers.update({'User-Agent': agent})
   r = s.get(url)
   r.raise_for_status()
+  
   return r.text
 
-def get_tables(inp):
+def get_tables(inp, look_for_next_week=True):
   d = html5lib.parse(inp)
   l = []
   for i in d.iter():
@@ -52,6 +55,27 @@ def get_tables(inp):
           last_h2 = i
       elif i.tag == xns+'div' and i.get('class') == 'mensa plan':
           l.append( (last_h2, i.find(xns+'div').find(xns+'table') ) )
+          
+          
+  global ONLINE_MODE
+  if ONLINE_MODE and look_for_next_week:
+    # search for 'nächste Woche'
+    next_week_link = None
+    for i in d.iter():
+      if i.text and "nächste Woche" in i.text:
+        if not i.get("href"): # in case get("href") returns None
+          continue
+        
+        next_week_link = "http://www.studierendenwerk-bielefeld.de" + \
+                                                            i.get("href")
+        break
+      
+    if next_week_link:
+        l.extend( get_tables(get(next_week_link), 
+                             look_for_next_week=False))
+                            # there won't be a link to a next week so we
+                            # might aswell not waste time looking for one
+    
   return l
 
 def parse_date(s):
@@ -134,12 +158,19 @@ def mk_feed(ts):
   return ET.ElementTree(feed)
 
 def run(args):
+  global ONLINE_MODE
   ET.register_namespace('', ons[1:-1])
+  
+  global agent
+  agent = args.agent
+  
   if args.input:
+    ONLINE_MODE = False
     with open(args.input) as f:
       inp = f.read()
   else:
-    inp = get(args.url, args.agent)
+    ONLINE_MODE = True
+    inp = get(args.url)
   ts = get_tables(inp)
   feed = mk_feed(ts)
   feed.write(args.output, encoding='UTF-8')
@@ -149,5 +180,22 @@ def main(*a):
   args = parse_args(*a)
   return run(args)
 
+def test_results():
+  global soup
+  main("-o test.xml".split(" "))
+  
+  import bs4
+  with open("test.xml", "r") as f:
+    soup = bs4.BeautifulSoup(f.read(), "html.parser")    
+    days = soup.findAll("day")
+    print("Found {} days.".format(len(days)))
+    # Should return 10 days, 5 from this week and 5 from the next one.
+    
+    for d in days:
+      print(d.text[:16])
+        
+
+
 if __name__ == '__main__':
-  sys.exit(main())
+  # sys.exit(main())
+  test_results()
